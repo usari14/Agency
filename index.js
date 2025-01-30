@@ -100,3 +100,44 @@ $(document).ready(function () {
         }
     });
 });
+
+// clients
+
+$(document).ready(function () {
+    $(".client-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        autoplaySpeed: 1000, 
+        smartSpeed: 1000,    
+        responsive: {
+            0: { items: 1 },
+            768: { items: 2 },
+            1024: { items: 3 }
+        }
+    });
+});
+
+
+// brand-carousel
+
+$(document).ready(function () {
+    $(".brand-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        autoplaySpeed: 1000, 
+        smartSpeed: 1000,    
+        responsive: {
+            0: { items: 2 },
+            768: { items: 3 },
+            1024: { items: 4 }
+        }
+    });
+});
