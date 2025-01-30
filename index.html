@@ -5,6 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style type="text/tailwindcss">
         @theme {
         --color-primary: #DD025A;
@@ -12,7 +19,8 @@
         --color-accent: #FDD6DE;
         --color-bgcolor: #E6F8F9;
         --color-footerbg: #250E3E;
-        --color-textclr: #D2D2D2;
+        --color-textclr: #4B4B4B;
+        --color-textclr2: #F9F5E3;
       }
     </style>
     <link rel="stylesheet" href="./index.css">
@@ -20,50 +28,110 @@
 
 <body>
 
-    <nav class=" absolute top-0 w-full z-20">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="./assets/logo.png" class="w-24 lg:w-32" alt="Logo">
-            </a>
-            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <button type="button"
-                    class="text-white bg-primary border-2 border-primary font-medium rounded-3xl text-sm lg:text-lg px-3 lg:px-4 py-1 lg:py-2 text-center transition-all duration-500 ease-in-out hover:bg-transparent hover:text-accent">
-                    Get started
-                </button>
-                <button id="menu-toggle"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6 open-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="2" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
+    <div id="preloader"
+        class="fixed top-0 left-0 w-full h-screen bg-footerbg flex justify-center items-center z-50 transition-all duration-700">
+        <div class="h-14 w-14 border-4 border-primary rounded-md slow-spin"></div>
+    </div>
+
+    <div id="content">
+
+        <nav class=" absolute top-0 w-full z-20">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="./assets/logo.png" class="w-24 lg:w-32" alt="Logo">
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <button type="button"
+                        class="text-white bg-primary border-2 border-primary font-medium rounded-3xl text-sm lg:text-lg px-3 lg:px-4 py-1 lg:py-2 text-center transition-all duration-500 ease-in-out hover:bg-transparent hover:text-accent">
+                        Get started
+                    </button>
+                    <button id="menu-toggle"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6 open-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="desktop-menu">
+                    <ul class="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0 text-white font-medium">
+                        <li>
+                            <a href="#"
+                                class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg">Features</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg">Team</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg">Pricing</a>
+                        </li>
+                        <li class="relative">
+                            <button id="contactButton"
+                                class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg flex items-center">
+                                Contact
+                                <svg class="w-4 h-4 ml-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
+                            <ul id="contactDropdown"
+                                class="absolute left-0 mt-2 w-40 bg-white text-gray-800 rounded-lg shadow-lg hidden">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-primary hover:text-white transition-all duration-500 ease-out rounded-lg">Option
+                                        1</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-primary hover:text-white rounded-lg transition-all duration-500 ease-out">Option
+                                        2</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-primary hover:text-white rounded-lg transition-all duration-500 ease-out">Option
+                                        3</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
             </div>
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="desktop-menu">
-                <ul class="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0 text-white font-medium">
-                    <li>
-                        <a href="#"
-                            class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg">Home</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg">Features</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg">Team</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg">Pricing</a>
-                    </li>
+            <!-- Sidebar -->
+            <div id="sidebar"
+                class="fixed top-0 right-0 h-full w-64 bg-secondary bg-opacity-90 text-white shadow-lg transform translate-x-full transition-transform duration-900 ease-out md:hidden z-50">
+
+                <div class="flex items-center justify-between px-4 py-4 border-b border-gray-600">
+                    <h2 class="text-lg font-medium">Menu</h2>
+                    <button id="close-sidebar" class="text-gray-400 hover:text-gray-100">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <ul class="flex flex-col space-y-4 px-4 mt-4">
+                    <li><a href="#" class="nav-link hover:text-secondary text-lg font-medium">Home</a></li>
+                    <li><a href="#" class="nav-link hover:text-secondary text-lg font-medium">Features</a></li>
+                    <li><a href="#" class="nav-link hover:text-secondary text-lg font-medium">Portfolio</a></li>
+                    <li><a href="#" class="nav-link hover:text-secondary text-lg font-medium">Team</a></li>
+                    <li><a href="#" class="nav-link hover:text-secondary text-lg font-medium">Pricing</a></li>
                     <li class="relative">
-                        <button id="contactButton"
-                            class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg flex items-center">
+                        <button id="dropdownButton"
+                            class="nav-link hover:text-secondary text-lg font-medium flex items-center w-full">
                             Contact
                             <svg class="w-4 h-4 ml-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 10 6">
@@ -71,159 +139,296 @@
                                     stroke-width="2" d="m1 1 4 4 4-4" />
                             </svg>
                         </button>
-                        <ul id="contactDropdown"
-                            class="absolute left-0 mt-2 w-40 bg-white text-gray-800 rounded-lg shadow-lg hidden">
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:bg-primary hover:text-white transition-all duration-500 ease-out rounded-lg">Option
-                                    1</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:bg-primary hover:text-white rounded-lg transition-all duration-500 ease-out">Option
-                                    2</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:bg-primary hover:text-white rounded-lg transition-all duration-500 ease-out">Option
-                                    3</a>
-                            </li>
+                        <ul id="dropdownMenu"
+                            class="hidden mt-2 space-y-2 bg-white text-gray-800 rounded-lg shadow-lg w-full">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white rounded-lg">Option
+                                    1</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white rounded-lg">Option
+                                    2</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white rounded-lg">Option
+                                    3</a></li>
                         </ul>
                     </li>
-
                 </ul>
-
             </div>
-        </div>
-        <!-- Sidebar -->
-        <div id="sidebar"
-            class="fixed top-0 right-0 h-full w-64 bg-secondary bg-opacity-90 text-white shadow-lg transform translate-x-full transition-transform duration-900 ease-out md:hidden z-30">
+            <!-- Overlay -->
+            <div id="overlay"
+                class="fixed inset-0 hidden md:hidden z-20 backdrop-blur-sm transition-opacity duration-300 ease-in-out">
+            </div>
+        </nav>
 
-            <div class="flex items-center justify-between px-4 py-4 border-b border-gray-600">
-                <h2 class="text-lg font-medium">Menu</h2>
-                <button id="close-sidebar" class="text-gray-400 hover:text-gray-100">
-                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="2" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
+        <div class="banner relative w-full">
+            <img src="./assets/banner4.jpg" alt="" class="w-full h-72 md:h-auto object-cover">
+            <div class="absolute inset-0 bg-[#221727]/90"></div> <!-- Background overlay -->
+            <div
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-full max-w-screen-lg px-6 banner-text">
+                <h1
+                    class="text-xl md:text-3xl lg:text-5xl xl:text-7xl pacifico text-primary block leading-normal mb-2 xl:mb-6">
+                    Amaze Expertise</h1>
+                <h2
+                    class="text-lg sm:text-xl md:text-4xl lg:text-6xl xl:text-8xl font-extrabold text-white mb-2 xl:mb-6">
+                    Creative &
+                    Digital Web Agency</h2>
+                <button
+                    class=" text-white text-sm md:text-lg font-normal md:font-semibold bg-primary border-2 border-primary px-7 md:px-14 py-2 md:py-4 rounded-lg transition-all duration-500 ease-out hover:bg-transparent hover:bg-opacity-80 hover:scale-105">
+                    Read More
                 </button>
             </div>
-            <ul class="flex flex-col space-y-4 px-4 mt-4">
-                <li><a href="#" class="nav-link hover:text-secondary text-lg font-medium">Home</a></li>
-                <li><a href="#" class="nav-link hover:text-secondary text-lg font-medium">Features</a></li>
-                <li><a href="#" class="nav-link hover:text-secondary text-lg font-medium">Portfolio</a></li>
-                <li><a href="#" class="nav-link hover:text-secondary text-lg font-medium">Team</a></li>
-                <li><a href="#" class="nav-link hover:text-secondary text-lg font-medium">Pricing</a></li>
-                <li class="relative">
-                    <button id="dropdownButton"
-                        class="nav-link hover:text-secondary text-lg font-medium flex items-center w-full">
-                        Contact
-                        <svg class="w-4 h-4 ml-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 10 6">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m1 1 4 4 4-4" />
-                        </svg>
-                    </button>
-                    <ul id="dropdownMenu"
-                        class="hidden mt-2 space-y-2 bg-white text-gray-800 rounded-lg shadow-lg w-full">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white rounded-lg">Option
-                                1</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white rounded-lg">Option
-                                2</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white rounded-lg">Option
-                                3</a></li>
-                    </ul>
-                </li>
-            </ul>
         </div>
-        <!-- Overlay -->
-        <div id="overlay"
-            class="fixed inset-0 hidden md:hidden z-20 backdrop-blur-sm transition-opacity duration-300 ease-in-out">
-        </div>
-    </nav>
 
-    <div class="banner relative w-full">
-        <img src="./assets/banner4.jpg" alt="" class="w-full h-72 md:h-auto object-cover">
-        <div class="absolute inset-0 bg-[#221727]/90"></div> <!-- Background overlay -->
-        <div
-            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-full max-w-screen-lg px-6 banner-text">
-            <h1
-                class="text-xl md:text-3xl lg:text-5xl xl:text-7xl pacifico text-primary block leading-normal mb-2 xl:mb-6">
-                Amaze Expertise</h1>
-            <h2 class="text-lg sm:text-xl md:text-4xl lg:text-6xl xl:text-8xl font-extrabold text-white mb-2 xl:mb-6">Creative &
-                Digital Web Agency</h2>
-            <button
-                class=" text-white text-sm md:text-lg font-normal md:font-semibold bg-primary border-2 border-primary px-7 md:px-14 py-2 md:py-4 rounded-lg transition-all duration-500 ease-out hover:bg-transparent hover:bg-opacity-80 hover:scale-105">
-                Read More
-            </button>
-        </div>
-    </div>
+        <div class="main">
+            <div class="relative overflow-hidden">
 
+                <!-- about -->
+                <div class="about part">
+                    <div class="container mx-auto px-4 lg:px-6 py-6 lg:py-10">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center justify-center">
+                            <div class="space-y-2 md:space-y-4">
+                                <h3 class="text-footerbg text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight relative md:z-20"
+                                    data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                                    We Design Visual Experience for The Web
+                                </h3>
+                                <span
+                                    class="hidden md:block relative bottom-0 lg:bottom-14 left-0 lg:left-28 text-5xl sm:text-7xl lg:text-9xl font-extrabold text-gray-100 md:z-10 italic opacity-30"
+                                    data-aos="fade-up" data-aos-duration="1000">
+                                    Design
+                                </span>
+                                <p class="text-base sm:text-lg text-font-medium italic">
+                                    Anno template provides fully flexible templates, allowing easy customization
+                                    of every page and section with just a few clicks, making your life easier.
+                                </p>
+                            </div>
+                            <div class="relative">
+                                <img src="./assets/video.jpg" alt="video" class="w-full rounded-lg" data-aos="fade-up"
+                                    data-aos-delay="300" data-aos-duration="1000">
+                                <a data-modal-target="default-modal" data-modal-toggle="default-modal"
+                                    data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"
+                                    class="hover:bg-accent absolute top-1/2 left-1/2 bg-primary hover:bg-accent hover:text-secondary hover:scale-110 py-5 px-6 rounded-full text-white transition-all duration-500 ease-out text-4xl transform -translate-x-1/2 -translate-y-1/2">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                                <div id="default-modal" tabindex="-1" aria-hidden="true"
+                                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                                    <div class="relative p-4 w-full max-w-2xl max-h-full">
+                                        <div class="modal-content">
+                                            <iframe width="100%" height="315"
+                                                src="https://www.youtube.com/embed/a3ICNMQW7Ok?si=1hXUs-UnMWAI9C8P"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <footer class="bg-footerbg text-white py-16">
-        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Column 1: Logo, Description, and Info -->
-            <div>
-                <img src="./assets/logo.png" alt="Logo" class="w-32 mb-8">
-                <p class="mb-4 text-textclr">Anno WP themes provides a fully flexible WordPress theme, Allow customize
-                    every page</p>
-                <p>Contact us: info@example.com</p>
-                <p>+123 456 7890</p>
-            </div>
+                <!-- services -->
+                <div class="services part bg-bgcolor">
+                    <div class="container mx-auto py-14">
+                        <div class="mb-6 lg:mb-14">
+                            <ul class="flex gap-10 flex-wrap -mb-px text-sm font-medium text-center"
+                                id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content"
+                                data-tabs-active-classes="text-white bg-primary"
+                                data-tabs-inactive-classes="text-secondary hover:text-white bg-gray-100 hover:bg-primary transition-all duration-700 ease-in-out"
+                                role="tablist">
+                                <div class="owl-carousel tab-carousel owl-theme">
+                                    <li class="me-2" role="presentation">
+                                        <button class="inline-block p-4 lg:p-10 text-left text-xl lg:text-3xl font-bold"
+                                            id="profile-styled-tab" data-tabs-target="#styled-profile" type="button"
+                                            role="tab" aria-controls="profile" aria-selected="false"><span
+                                                class="text-3xl lg:text-7xl">01</span>
+                                            <br> Web Design </button>
+                                    </li>
+                                    <li class="me-2" role="presentation">
+                                        <button class="inline-block p-4 lg:p-10 text-left text-xl lg:text-3xl font-bold"
+                                            id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button"
+                                            role="tab" aria-controls="dashboard" aria-selected="false"><span
+                                                class="text-3xl lg:text-7xl">02</span>
+                                            <br> Development</button>
+                                    </li>
+                                    <li class="me-2" role="presentation">
+                                        <button
+                                            class="inline-block p-4 lg:p-10 text-left text-xl lg:text-3xl  font-bold"
+                                            id="settings-styled-tab" data-tabs-target="#styled-settings" type="button"
+                                            role="tab" aria-controls="settings" aria-selected="false"><span
+                                                class="text-3xl lg:text-7xl">03</span>
+                                            <br> Mobile App</button>
+                                    </li>
+                                    <li role="presentation">
+                                        <button
+                                            class="inline-block p-4 lg:p-10 text-left text-xl lg:text-3xl  font-bold"
+                                            id="contacts-styled-tab" data-tabs-target="#styled-contacts" type="button"
+                                            role="tab" aria-controls="contacts" aria-selected="false"><span
+                                                class="text-3xl lg:text-7xl">04</span>
+                                            <br> SEO Marketing</button>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div id="default-styled-tab-content">
+                            <div class="hidden p-4" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
+                                    <div class="pr-8 mb-10 lg:mb-0">
+                                        <h4 class="text-3xl md:text-4xl font-bold mb-2 md:mb-4">Web Design</h4>
+                                        <p class="mb-2 text-sm md:text-lg">Web design is the process of creating websites. It encompasses
+                                            several
+                                            different aspects, including web page layout, content production, and it
+                                            graphic design.</p>
+                                        <p class="mb-4 md:mb-8 text-sm md:text-lg">While the terms web design and web development are often used of
+                                            this
+                                            interchangeably, web design is technically a subset of the broader lets an
+                                            category of web development.</p>
+                                        <a href="#"
+                                            class="bg-primary px-8 py-2 text-white text-lg border-2 border-primary hover:bg-transparent hover:text-secondary transition-transform duration-500 ease-in-out font-semibold">
+                                            Read More
+                                        </a>
+                                    </div>
+                                    <div class="flex justify-center">
+                                        <img src="./assets/service1.png" class="w-auto" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden p-4" id="styled-dashboard" role="tabpanel"
+                                aria-labelledby="dashboard-tab">
+                                <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
+                                    <div class="pr-8 mb-10 lg:mb-0">
+                                        <h4 class="text-3xl md:text-4xl font-bold mb-2 md:mb-4">Development</h4>
+                                        <p class="mb-2 text-sm md:text-lg">Web design is the process of creating websites. It encompasses
+                                            several
+                                            different aspects, including web page layout, content production, and it
+                                            graphic design.</p>
+                                        <p class="mb-4 md:mb-8 text-sm md:text-lg">While the terms web design and web development are often used of
+                                            this
+                                            interchangeably, web design is technically a subset of the broader lets an
+                                            category of web development.</p>
+                                        <a href="#"
+                                            class="bg-primary px-8 py-2 text-white text-lg border-2 border-primary hover:bg-transparent hover:text-secondary transition-transform duration-500 ease-in-out font-semibold">
+                                            Read More
+                                        </a>
+                                    </div>
+                                    <div class="flex justify-center">
+                                        <img src="./assets/service1.png" class="w-auto" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden p-4" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
+                                <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
+                                    <div class="pr-8 mb-10 lg:mb-0">
+                                        <h4 class="text-3xl md:text-4xl font-bold mb-2 md:mb-4">Mobile App</h4>
+                                        <p class="mb-2 text-sm md:text-lg">Web design is the process of creating websites. It encompasses
+                                            several
+                                            different aspects, including web page layout, content production, and it
+                                            graphic design.</p>
+                                        <p class="mb-4 md:mb-8 text-sm md:text-lg">While the terms web design and web development are often used of
+                                            this
+                                            interchangeably, web design is technically a subset of the broader lets an
+                                            category of web development.</p>
+                                        <a href="#"
+                                            class="bg-primary px-8 py-2 text-white text-lg border-2 border-primary hover:bg-transparent hover:text-secondary transition-transform duration-500 ease-in-out font-semibold">
+                                            Read More
+                                        </a>
+                                    </div>
+                                    <div class="flex justify-center">
+                                        <img src="./assets/service1.png" class="w-auto" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden p-4" id="styled-contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                                <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
+                                    <div class="pr-8 mb-10 lg:mb-0">
+                                        <h4 class="text-3xl md:text-4xl font-bold mb-2 md:mb-4">SEO</h4>
+                                        <p class="mb-2 text-sm md:text-lg">Web design is the process of creating websites. It encompasses
+                                            several
+                                            different aspects, including web page layout, content production, and it
+                                            graphic design.</p>
+                                        <p class="mb-4 md:mb-8 text-sm md:text-lg">While the terms web design and web development are often used of
+                                            this
+                                            interchangeably, web design is technically a subset of the broader lets an
+                                            category of web development.</p>
+                                        <a href="#"
+                                            class="bg-primary px-8 py-2 text-white text-lg border-2 border-primary hover:bg-transparent hover:text-secondary transition-transform duration-500 ease-in-out font-semibold">
+                                            Read More
+                                        </a>
+                                    </div>
+                                    <div class="flex justify-center">
+                                        <img src="./assets/service1.png" class="w-auto" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-            <!-- Column 2: Text and Newsletter -->
-            <div>
-                <h3 class="text-2xl font-semibold mb-8 text-textclr ">Newsletter</h3>
-                <p class="mb-4 text-textclr">Subscribe to our newsletter to get the latest updates.</p>
-                <form>
-                    <input type="email" placeholder="Enter your email"
-                        class="p-2 w-full rounded bg-accent text-black mb-4">
-                    <button type="submit" class="bg-primary text-textclr p-2 rounded w-full">Subscribe</button>
-                </form>
-            </div>
-
-            <!-- Column 3: Quick Links -->
-            <div>
-                <h3 class="text-2xl font-semibold mb-8 text-textclr">Quick Links</h3>
-                <ul>
-                    <li><a href="#" class="hover:text-primary text-textclr mb-3 block">Home</a></li>
-                    <li><a href="#" class="hover:text-primary text-textclr mb-3 block">Features</a></li>
-                    <li><a href="#" class="hover:text-primary text-textclr mb-3 block">Portfolio</a></li>
-                    <li><a href="#" class="hover:text-primary text-textclr mb-3 block">Team</a></li>
-                    <li><a href="#" class="hover:text-primary text-textclr mb-3 block">Pricing</a></li>
-                    <li><a href="#" class="hover:text-primary text-textclr mb-3 block">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 4: Gallery -->
-            <div>
-                <h3 class="text-2xl font-semibold mb-8 text-textclr">Gallery</h3>
-                <div class="grid grid-cols-3 gap-2">
-                    <img src="./assets/gallery1.jpg" alt="Gallery Image 1" class="h-16 w-24 object-cover rounded">
-                    <img src="./assets/gallery1.jpg" alt="Gallery Image 2" class="h-16 w-24 object-cover rounded">
-                    <img src="./assets/gallery1.jpg" alt="Gallery Image 3" class="h-16 w-24 object-cover rounded">
-                    <img src="./assets/gallery1.jpg" alt="Gallery Image 4" class="h-16 w-24 object-cover rounded">
-                    <img src="./assets/gallery1.jpg" alt="Gallery Image 5" class="h-16 w-24 object-cover rounded">
-                    <img src="./assets/gallery1.jpg" alt="Gallery Image 6" class="h-16 w-24 object-cover rounded">
+                    </div>
                 </div>
 
             </div>
         </div>
 
-        <!-- Bottom Copyright Section -->
-        <div class="bg-[#1E0C31] text-center py-4 mt-16">
-            <p class="text-textclr">&copy; 2025 Your Company. All Rights Reserved.</p>
-        </div>
-    </footer>
+        <footer class="bg-footerbg text-white py-16" data-aos="fade-up">
+            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Column 1: Logo, Description, and Info -->
+                <div>
+                    <img src="./assets/logo.png" alt="Logo" class="w-32 mb-8">
+                    <p class="mb-4 text-textclr2">Anno WP themes provides a fully flexible WordPress theme, Allow
+                        customize
+                        every page</p>
+                    <p>Contact us: info@example.com</p>
+                    <p>+123 456 7890</p>
+                </div>
+
+                <!-- Column 2: Text and Newsletter -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-8 text-textclr2 ">Newsletter</h3>
+                    <p class="mb-4 text-textclr2">Subscribe to our newsletter to get the latest updates.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email"
+                            class="p-2 w-full rounded bg-accent text-black mb-4">
+                        <button type="submit" class="bg-primary text-textclr2 p-2 rounded w-full">Subscribe</button>
+                    </form>
+                </div>
+
+                <!-- Column 3: Quick Links -->
+                <div>
+                    <h3 class="text-2xl font-semibold  text-textclr2">Quick Links</h3>
+                    <ul>
+                        <li><a href="#" class="hover:text-primary text-textclr2 mb-3 block">Home</a></li>
+                        <li><a href="#" class="hover:text-primary text-textclr2 mb-3 block">Features</a></li>
+                        <li><a href="#" class="hover:text-primary text-textclr2 mb-3 block">Portfolio</a></li>
+                        <li><a href="#" class="hover:text-primary text-textclr2 mb-3 block">Team</a></li>
+                        <li><a href="#" class="hover:text-primary text-textclr2 mb-3 block">Pricing</a></li>
+                        <li><a href="#" class="hover:text-primary text-textclr2 mb-3 block">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Gallery -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-8 text-textclr2">Gallery</h3>
+                    <div class="grid grid-cols-3 gap-2">
+                        <img src="./assets/gallery1.jpg" alt="Gallery Image 1" class="h-16 w-24 object-cover rounded">
+                        <img src="./assets/gallery1.jpg" alt="Gallery Image 2" class="h-16 w-24 object-cover rounded">
+                        <img src="./assets/gallery1.jpg" alt="Gallery Image 3" class="h-16 w-24 object-cover rounded">
+                        <img src="./assets/gallery1.jpg" alt="Gallery Image 4" class="h-16 w-24 object-cover rounded">
+                        <img src="./assets/gallery1.jpg" alt="Gallery Image 5" class="h-16 w-24 object-cover rounded">
+                        <img src="./assets/gallery1.jpg" alt="Gallery Image 6" class="h-16 w-24 object-cover rounded">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Bottom Copyright Section -->
+            <div class="bg-[#1E0C31] text-center py-4 mt-16">
+                <p class="text-textclr2">&copy; 2025 Your Company. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    </div>
 
 
-
-
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./index.js"></script>
 
 </body>

@@ -1,33 +1,28 @@
+AOS.init();
+
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('menu-toggle');
     const sidebar = document.getElementById('sidebar');
     const overlay = document.getElementById('overlay');
     const closeButton = document.getElementById('close-sidebar');
     const toggleSidebar = () => {
-        console.log('Toggle button clicked');
-        console.log('Sidebar classes before:', sidebar.className);
         if (sidebar.classList.contains('translate-x-full')) {
-            console.log('Opening sidebar');
             sidebar.classList.remove('translate-x-full');
             sidebar.classList.add('translate-x-0');
             overlay.classList.remove('hidden');
         } else {
-            console.log('Closing sidebar');
             sidebar.classList.remove('translate-x-0');
             sidebar.classList.add('translate-x-full');
             overlay.classList.add('hidden');
         }
-        console.log('Sidebar classes after:', sidebar.className);
     };
     toggleButton.addEventListener('click', toggleSidebar);
     closeButton.addEventListener('click', () => {
-        console.log('Close button clicked');
         sidebar.classList.remove('translate-x-0');
         sidebar.classList.add('translate-x-full');
         overlay.classList.add('hidden');
     });
     overlay.addEventListener('click', () => {
-        console.log('Overlay clicked');
         sidebar.classList.remove('translate-x-0');
         sidebar.classList.add('translate-x-full');
         overlay.classList.add('hidden');
@@ -64,4 +59,44 @@ banner.addEventListener('mousemove', (e) => {
     const moveX = (mouseX / width) - 0.5;
     const moveY = (mouseY / height) - 0.5;
     text.style.transform = `translate(${moveX * 30}px, ${moveY * 10}px)`;
+});
+
+
+window.onload = function () {
+    setTimeout(() => {
+        document.getElementById("preloader").classList.add("opacity-0");
+        document.getElementById("content").style.opacity = "1";
+        setTimeout(() => {
+            document.getElementById("preloader").style.display = "none";
+        }, 700);
+    }, 1500);
+};
+
+
+// carousel
+
+$(document).ready(function () {
+    $(".tab-carousel").owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: false,
+        dots: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            520: {
+                items: 3
+            },
+            768: {
+                items: 4
+            },
+            900: {
+                items: 3
+            },
+            1250: {
+                items: 4
+            }
+        }
+    });
 });

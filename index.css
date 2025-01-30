@@ -11,19 +11,53 @@ body {
     overflow-x: hidden;
 }
 
-.container{
+.container {
     max-width: 1320px;
 }
+
+.part{
+    padding: 40px 0;
+}
+
+/* loader */
+#content {
+    opacity: 0;
+}
+
+@keyframes slow-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.slow-spin {
+    animation: slow-spin 1.5s linear infinite;
+}
+
 
 .active {
     color: var(--color-primary);
     font-weight: bold;
 }
 
-.pacifico{
+.pacifico {
     font-family: var(--font-pacifico);
 }
 
 .banner-text {
     transition: transform 1s ease-out;
+}
+
+
+.owl-carousel .owl-stage {
+    display: flex !important; /* Forces row direction */
+}
+
+.owl-carousel .owl-item {
+    display: flex !important; /* Ensures items remain in a row */
+    justify-content: center;
 }
