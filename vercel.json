@@ -1,6 +1,9 @@
 {
-    "builds": [{ "src": "./public/index.html", "use": "@vercel/static" }],
-    "scripts": {
-      "build": "npx tailwindcss -i ./index.css -o ./public/output.css --minify"
-    }
-  }
+    "builds": [
+        {
+            "src": "./public/index.html",
+            "use": "@vercel/static"
+        }
+    ],
+  
+}
