@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tailwindcss -i ./index.css -o ./public/output.css --watch",
-    "build": "npx tailwindcss -i index.css -o public/output.css --minify"
+    "build": "chmod +x node_modules/.bin/tailwindcss && npx tailwindcss -i ./index.css -o ./public/output.css --minify"
   },
   "keywords": [],
   "author": "",
