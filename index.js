@@ -62,15 +62,15 @@ navLinks.forEach(link => {
 // });
 
 
-window.onload = function () {
-    setTimeout(() => {
-        document.getElementById("preloader").classList.add("opacity-0");
-        document.getElementById("content").style.opacity = "1";
-        setTimeout(() => {
-            document.getElementById("preloader").style.display = "none";
-        }, 700);
-    }, 1500);
-};
+// window.onload = function () {
+//     setTimeout(() => {
+//         document.getElementById("preloader").classList.add("opacity-0");
+//         document.getElementById("content").style.opacity = "1";
+//         setTimeout(() => {
+//             document.getElementById("preloader").style.display = "none";
+//         }, 700);
+//     }, 1500);
+// };
 
 
 // carousel
