@@ -40,26 +40,26 @@ navLinks.forEach(link => {
 });
 
 
-document.getElementById("dropdownButton").addEventListener("click", function () {
-    document.getElementById("dropdownMenu").classList.toggle("hidden");
-});
+// document.getElementById("dropdownButton").addEventListener("click", function () {
+//     document.getElementById("dropdownMenu").classList.toggle("hidden");
+// });
 
-document.getElementById("contactButton").addEventListener("click", function () {
-    let dropdown = document.getElementById("contactDropdown");
-    dropdown.classList.toggle("hidden");
-});
+// document.getElementById("contactButton").addEventListener("click", function () {
+//     let dropdown = document.getElementById("contactDropdown");
+//     dropdown.classList.toggle("hidden");
+// });
 
 
-const banner = document.querySelector('.banner');
-const text = document.querySelector('.banner-text');
+// const banner = document.querySelector('.banner');
+// const text = document.querySelector('.banner-text');
 
-banner.addEventListener('mousemove', (e) => {
-    const { offsetWidth: width, offsetHeight: height } = banner;
-    const { offsetX: mouseX, offsetY: mouseY } = e;
-    const moveX = (mouseX / width) - 0.5;
-    const moveY = (mouseY / height) - 0.5;
-    text.style.transform = `translate(${moveX * 30}px, ${moveY * 10}px)`;
-});
+// banner.addEventListener('mousemove', (e) => {
+//     const { offsetWidth: width, offsetHeight: height } = banner;
+//     const { offsetX: mouseX, offsetY: mouseY } = e;
+//     const moveX = (mouseX / width) - 0.5;
+//     const moveY = (mouseY / height) - 0.5;
+//     text.style.transform = `translate(${moveX * 30}px, ${moveY * 10}px)`;
+// });
 
 
 window.onload = function () {
@@ -141,3 +141,25 @@ $(document).ready(function () {
         }
     });
 });
+
+
+
+// smooth scrool 
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     document.querySelectorAll('.nav-link').forEach(anchor => {
+//         anchor.addEventListener('click', function (e) {
+//             const targetId = this.getAttribute('href');
+//             if (targetId.startsWith("#")) {
+//                 e.preventDefault();
+//                 const targetElement = document.querySelector(targetId);
+//                 if (targetElement) {
+//                     window.scrollTo({
+//                         top: targetElement.offsetTop - 100, // Adjust offset for fixed navbar
+//                         behavior: "smooth"
+//                     });
+//                 }
+//             }
+//         });
+//     });
+// });

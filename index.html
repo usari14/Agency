@@ -4,26 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <style type="text/tailwindcss">
-        @theme {
-        --color-primary: #DD025A;
-        --color-secondary: #24182E;
-        --color-accent: #FDD6DE;
-        --color-bgcolor: #E6F8F9;
-        --color-footerbg: #250E3E;
-        --color-textclr: #4B4B4B;
-        --color-textclr2: #F9F5E3;
-      }
-    </style>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./output.css">
 </head>
 
 <body>
@@ -35,14 +21,14 @@
 
     <div id="content">
 
-        <nav class=" absolute top-0 w-full z-20">
+        <nav class="absolute top-0 w-full z-20">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="./assets/logo.png" class="w-24 lg:w-32" alt="Logo">
                 </a>
                 <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     <button type="button"
-                        class="text-white bg-primary border-2 border-primary font-medium rounded-3xl text-sm lg:text-lg px-3 lg:px-4 py-1 lg:py-2 text-center transition-all duration-500 ease-in-out hover:bg-transparent hover:text-accent">
+                        class="text-white bg-primary cursor-pointer border-2 border-primary font-medium rounded-3xl text-sm lg:text-lg px-3 lg:px-4 py-1 lg:py-2 text-center transition-all duration-500 ease-in-out hover:bg-transparent hover:text-accent">
                         Get started
                     </button>
                     <button id="menu-toggle"
@@ -57,35 +43,43 @@
                 <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="desktop-menu">
                     <ul class="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0 text-white font-medium">
                         <li>
-                            <a href="#"
+                            <a href="/"
                                 class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg">Home</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="#about"
+                                class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg">About</a>
+                        </li>
+                        <li>
+                            <a href="#services"
                                 class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg">Features</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="#portfolio"
                                 class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg">Portfolio</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="#"
                                 class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg">Team</a>
-                        </li>
+                        </li> -->
                         <li>
-                            <a href="#"
+                            <a href="#pricing"
                                 class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg">Pricing</a>
                         </li>
-                        <li class="relative">
-                            <button id="contactButton"
-                                class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg flex items-center">
+                        <li>
+                            <a href="#contact"
+                                class="nav-link hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg">Contact</a>
+                        </li>
+                        <!-- <li class="relative">
+                            <a href="#contact" id="contactButton"
+                                class="nav-link cursor-pointer hover:text-primary font-medium lg:font-extrabold text-sm lg:text-lg flex items-center">
                                 Contact
                                 <svg class="w-4 h-4 ml-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="m1 1 4 4 4-4" />
                                 </svg>
-                            </button>
+                            </a>
                             <ul id="contactDropdown"
                                 class="absolute left-0 mt-2 w-40 bg-white text-gray-800 rounded-lg shadow-lg hidden">
                                 <li>
@@ -104,8 +98,7 @@
                                         3</a>
                                 </li>
                             </ul>
-                        </li>
-
+                        </li> -->
                     </ul>
 
                 </div>
@@ -124,12 +117,15 @@
                     </button>
                 </div>
                 <ul class="flex flex-col space-y-4 px-4 mt-4">
-                    <li><a href="#" class="nav-link hover:text-secondary text-lg font-medium">Home</a></li>
-                    <li><a href="#" class="nav-link hover:text-secondary text-lg font-medium">Features</a></li>
-                    <li><a href="#" class="nav-link hover:text-secondary text-lg font-medium">Portfolio</a></li>
-                    <li><a href="#" class="nav-link hover:text-secondary text-lg font-medium">Team</a></li>
-                    <li><a href="#" class="nav-link hover:text-secondary text-lg font-medium">Pricing</a></li>
-                    <li class="relative">
+                    <li><a href="/" class="nav-link hover:text-secondary text-lg font-medium">Home</a></li>
+                    <li><a href="#about" class="nav-link hover:text-secondary text-lg font-medium">about</a></li>
+                    <li><a href="#services" class="nav-link hover:text-secondary text-lg font-medium">Features</a></li>
+                    <li><a href="#portfolio" class="nav-link hover:text-secondary text-lg font-medium">Portfolio</a>
+                    </li>
+                    <!-- <li><a href="#" class="nav-link hover:text-secondary text-lg font-medium">Team</a></li> -->
+                    <li><a href="#pricing" class="nav-link hover:text-secondary text-lg font-medium">Pricing</a></li>
+                    <li><a href="#contact" class="nav-link hover:text-secondary text-lg font-medium">Contact</a></li>
+                    <!-- <li class="relative">
                         <button id="dropdownButton"
                             class="nav-link hover:text-secondary text-lg font-medium flex items-center w-full">
                             Contact
@@ -148,7 +144,7 @@
                             <li><a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white rounded-lg">Option
                                     3</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <!-- Overlay -->
@@ -170,7 +166,7 @@
                     Creative &
                     Digital Web Agency</h2>
                 <button
-                    class=" text-white text-sm md:text-lg font-normal md:font-semibold bg-primary border-2 border-primary px-7 md:px-14 py-2 md:py-4 rounded-lg transition-all duration-500 ease-out hover:bg-transparent hover:bg-opacity-80 hover:scale-105">
+                    class=" text-white cursor-pointer text-sm md:text-lg font-normal md:font-semibold bg-primary border-2 border-primary px-7 md:px-14 py-2 md:py-4 rounded-lg transition-all duration-500 ease-out hover:bg-transparent hover:bg-opacity-80 hover:scale-105">
                     Read More
                 </button>
             </div>
@@ -180,7 +176,7 @@
             <div class="relative overflow-hidden">
 
                 <!-- about -->
-                <div class="about part">
+                <div class="about part" id="about">
                     <div class="container mx-auto px-4 lg:px-6 py-6 lg:py-10">
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center justify-center">
                             <div class="space-y-2 md:space-y-4">
@@ -203,18 +199,14 @@
                                     data-aos-delay="300" data-aos-duration="1000">
                                 <a data-modal-target="default-modal" data-modal-toggle="default-modal"
                                     data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"
-                                    class="hover:bg-accent absolute top-1/2 left-1/2 bg-primary hover:bg-accent hover:text-secondary hover:scale-110 py-5 px-6 rounded-full text-white transition-all duration-500 ease-out text-4xl transform -translate-x-1/2 -translate-y-1/2">
+                                    class="hover:bg-accent absolute top-1/2 left-1/2 bg-primary hover:bg-accent hover:text-secondary py-5 px-6 rounded-full text-white transition-all duration-500 ease-in-out text-4xl transform -translate-x-1/2 -translate-y-1/2">
                                     <i class="fa-solid fa-play"></i>
                                 </a>
                                 <div id="default-modal" tabindex="-1" aria-hidden="true"
                                     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
                                     <div class="relative p-4 w-full max-w-2xl max-h-full">
                                         <div class="modal-content">
-                                            <iframe width="100%" height="315"
-                                                src="https://www.youtube.com/embed/a3ICNMQW7Ok?si=1hXUs-UnMWAI9C8P"
-                                                frameborder="0"
-                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                                allowfullscreen></iframe>
+                                            <img src="./assets/video.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -224,7 +216,7 @@
                 </div>
 
                 <!-- services -->
-                <div class="services part bg-bgcolor">
+                <div class="services part bg-bgcolor" id="services">
                     <div class="container mx-auto py-14">
                         <div class="mb-6 lg:mb-14">
                             <ul class="flex gap-10 flex-wrap -mb-px text-sm font-medium text-center" data-aos="fade-up"
@@ -235,14 +227,16 @@
                                 role="tablist">
                                 <div class="owl-carousel tab-carousel owl-theme">
                                     <li class="me-2" role="presentation">
-                                        <button class="inline-block p-4 lg:p-10 text-left text-xl lg:text-3xl font-bold"
+                                        <button
+                                            class="inline-block p-4 cursor-pointer lg:p-10 text-left text-xl lg:text-3xl font-bold"
                                             id="profile-styled-tab" data-tabs-target="#styled-profile" type="button"
                                             role="tab" aria-controls="profile" aria-selected="false"><span
                                                 class="text-3xl lg:text-7xl">01</span>
                                             <br> Web Design </button>
                                     </li>
                                     <li class="me-2" role="presentation">
-                                        <button class="inline-block p-4 lg:p-10 text-left text-xl lg:text-3xl font-bold"
+                                        <button
+                                            class="inline-block p-4 cursor-pointer lg:p-10 text-left text-xl lg:text-3xl font-bold"
                                             id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button"
                                             role="tab" aria-controls="dashboard" aria-selected="false"><span
                                                 class="text-3xl lg:text-7xl">02</span>
@@ -250,7 +244,7 @@
                                     </li>
                                     <li class="me-2" role="presentation">
                                         <button
-                                            class="inline-block p-4 lg:p-10 text-left text-xl lg:text-3xl  font-bold"
+                                            class="inline-block p-4 cursor-pointer lg:p-10 text-left text-xl lg:text-3xl  font-bold"
                                             id="settings-styled-tab" data-tabs-target="#styled-settings" type="button"
                                             role="tab" aria-controls="settings" aria-selected="false"><span
                                                 class="text-3xl lg:text-7xl">03</span>
@@ -258,7 +252,7 @@
                                     </li>
                                     <li role="presentation">
                                         <button
-                                            class="inline-block p-4 lg:p-10 text-left text-xl lg:text-3xl  font-bold"
+                                            class="inline-block p-4 cursor-pointer lg:p-10 text-left text-xl lg:text-3xl  font-bold"
                                             id="contacts-styled-tab" data-tabs-target="#styled-contacts" type="button"
                                             role="tab" aria-controls="contacts" aria-selected="false"><span
                                                 class="text-3xl lg:text-7xl">04</span>
@@ -371,7 +365,7 @@
                 </div>
 
                 <!-- portfolio -->
-                <div class="portfolio part">
+                <div class="portfolio part" id="portfolio">
                     <div class="container mx-auto py-6 md:py-14">
                         <h3 class="text-footerbg text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight relative md:z-20 text-left px-3 xl:px-0 mb-8 md:mb-0"
                             data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
@@ -387,8 +381,8 @@
                                 <div class="grid grid-cols-1 sm:grid-cols-2">
                                     <div class="relative group overflow-hidden">
                                         <div class="overflow-hidden">
-                                            <img src="./assets/pf1.jpg" alt=""
-                                                class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
+                                            <a href="#"><img src="./assets/pf1.jpg" alt=""
+                                                    class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125"></a>
                                         </div>
                                         <div
                                             class="absolute bottom-[-100%] left-1/2 w-52 -translate-x-1/2 bg-white text-black text-center py-2 transition-all duration-500 group-hover:bottom-5">
@@ -398,8 +392,10 @@
                                     </div>
                                     <div class="relative group overflow-hidden">
                                         <div class="overflow-hidden">
-                                            <img src="./assets/pf2.jpg" alt=""
-                                                class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
+                                            <a href="#">
+                                                <img src="./assets/pf2.jpg" alt=""
+                                                    class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
+                                            </a>
                                         </div>
                                         <div
                                             class="absolute bottom-[-100%] left-1/2 w-52 mx-auto bg-white text-black text-center py-2 
@@ -413,8 +409,10 @@
                             </div>
                             <div class="relative group overflow-hidden">
                                 <div class="overflow-hidden">
-                                    <img src="./assets/pf3.jpg" alt=""
-                                        class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
+                                    <a href="#">
+                                        <img src="./assets/pf3.jpg" alt=""
+                                            class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
+                                    </a>
                                 </div>
                                 <div
                                     class="absolute bottom-[-100%] left-1/2 w-52 -translate-x-1/2 bg-white text-black text-center py-2 transition-all duration-500 group-hover:bottom-5">
@@ -427,8 +425,10 @@
                         <div class="grid grid-cols-1 lg:grid-cols-2">
                             <div class="relative group overflow-hidden">
                                 <div class="overflow-hidden">
-                                    <img src="./assets/pf4.jpg" alt=""
-                                        class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
+                                    <a href="#">
+                                        <img src="./assets/pf4.jpg" alt=""
+                                            class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
+                                    </a>
                                 </div>
                                 <div
                                     class="absolute bottom-[-100%] left-1/2 w-52 -translate-x-1/2 bg-white text-black text-center py-2 transition-all duration-500 group-hover:bottom-5">
@@ -440,8 +440,10 @@
                                 <div class="grid grid-cols-1 sm:grid-cols-2">
                                     <div class="relative group overflow-hidden">
                                         <div class="overflow-hidden">
-                                            <img src="./assets/pf5.jpg" alt=""
-                                                class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
+                                            <a href="#">
+                                                <img src="./assets/pf5.jpg" alt=""
+                                                    class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
+                                            </a>
                                         </div>
                                         <div
                                             class="absolute bottom-[-100%] left-1/2 w-52 -translate-x-1/2 bg-white text-black text-center py-2 transition-all duration-500 group-hover:bottom-5">
@@ -451,8 +453,10 @@
                                     </div>
                                     <div class="relative group overflow-hidden">
                                         <div class="overflow-hidden">
-                                            <img src="./assets/pf6.jpg" alt=""
-                                                class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
+                                            <a href="#">
+                                                <img src="./assets/pf6.jpg" alt=""
+                                                    class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
+                                            </a>
                                         </div>
                                         <div
                                             class="absolute bottom-[-100%] left-1/2 w-52 -translate-x-1/2 bg-white text-black text-center py-2 transition-all duration-500 group-hover:bottom-5">
@@ -468,7 +472,7 @@
                 </div>
 
                 <!-- review section -->
-                <div class="reviews part bg-bgcolor">
+                <div class="reviews part bg-bgcolor" id="reviews">
                     <div class="container mx-auto py-10 px-3 xl:px-0">
                         <h3 class="text-footerbg text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight relative md:z-20 text-left mb-8 md:mb-0"
                             data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
@@ -557,7 +561,7 @@
                 </div>
 
                 <!-- email -->
-                <section
+                <section id="email"
                     class="relative h-80 md:h-[600px] bg-fixed bg-center bg-cover before:absolute before:inset-0 before:bg-footerbg/90"
                     style="background-image: url('./assets/herosection.jpg');">
                     <div class="container mx-auto relative flex items-center justify-center h-full">
@@ -572,7 +576,7 @@
                 </section>
 
                 <!-- pricing -->
-                <div class="pricing part bg-bgcolor">
+                <div class="pricing part bg-bgcolor" id="pricing">
                     <div class="container mx-auto py-4 md:py-16 px-4">
                         <h3 class="text-footerbg text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight relative md:z-20 text-left mb-8 md:mb-0"
                             data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
@@ -613,7 +617,7 @@
                                     </li>
                                 </ul>
                                 <button
-                                    class="w-full py-6 bg-secondary text-white border border-secondary font-bold hover:bg-transparent hover:text-black transition-all duration-900 uppercase">try
+                                    class="w-full py-6 cursor-pointer bg-secondary text-white border border-secondary font-bold hover:bg-transparent hover:text-black transition-all duration-900 uppercase">try
                                     it now</button>
                             </div>
 
@@ -646,7 +650,7 @@
                                     </li>
                                 </ul>
                                 <button
-                                    class="w-full py-6 bg-primary text-white border border-primary font-bold hover:bg-transparent hover:text-black transition-all duration-900 uppercase">try
+                                    class="w-full py-6 cursor-pointer bg-primary text-white border border-primary font-bold hover:bg-transparent hover:text-black transition-all duration-900 uppercase">try
                                     it now</button>
                             </div>
 
@@ -678,7 +682,7 @@
                                     </li>
                                 </ul>
                                 <button
-                                    class="w-full py-6 bg-secondary text-white border border-secondary font-bold hover:bg-transparent hover:text-black transition-all duration-900 uppercase">try
+                                    class="w-full py-6 cursor-pointer bg-secondary text-white border border-secondary font-bold hover:bg-transparent hover:text-black transition-all duration-900 uppercase">try
                                     it now</button>
                             </div>
 
@@ -687,7 +691,7 @@
                 </div>
 
                 <!-- contact -->
-                <div class="contact part">
+                <div class="contact part" id="contact">
                     <div class="container mx-auto py-6 md:py-14 px-3 xl:px-0">
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
                             <div>
@@ -717,7 +721,7 @@
                                             class="p-3 border border-gray-200" required></textarea>
                                     </div>
                                     <button type="submit"
-                                        class="w-full py-3 text-lg font-semibold bg-primary border border-primary transition-all duration-900 ease-in-out text-white hover:bg-transparent hover:text-primary pointer-events-auto">Send
+                                        class="w-full py-3 cursor-pointer text-lg font-semibold bg-primary border border-primary transition-all duration-900 ease-in-out text-white hover:bg-transparent hover:text-primary pointer-events-auto">Send
                                         Message</button>
                                 </form>
                             </div>
@@ -742,11 +746,11 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
 
-        <footer class="bg-footerbg text-white py-16" data-aos="fade-up">
+        <footer class="bg-footerbg text-white pt-16" data-aos="fade-up">
             <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Column 1: Logo, Description, and Info -->
                 <div>
@@ -765,13 +769,14 @@
                     <form>
                         <input type="email" placeholder="Enter your email"
                             class="p-2 w-full rounded bg-accent text-black mb-4">
-                        <button type="submit" class="bg-primary text-textclr2 p-2 rounded w-full">Subscribe</button>
+                        <button type="submit"
+                            class="bg-primary cursor-pointer text-textclr2 p-2 rounded w-full">Subscribe</button>
                     </form>
                 </div>
 
                 <!-- Column 3: Quick Links -->
                 <div>
-                    <h3 class="text-2xl font-semibold  text-textclr2">Quick Links</h3>
+                    <h3 class="text-2xl font-semibold  text-textclr2 mb-8">Quick Links</h3>
                     <ul>
                         <li><a href="#" class="hover:text-primary text-textclr2 mb-3 block">Home</a></li>
                         <li><a href="#" class="hover:text-primary text-textclr2 mb-3 block">Features</a></li>
@@ -805,9 +810,8 @@
 
     </div>
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
