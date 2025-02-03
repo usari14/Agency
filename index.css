@@ -3,7 +3,6 @@
 @import "tailwindcss";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
-
 @theme {
     --color-primary: #DD025A;
     --color-secondary: #24182E;
