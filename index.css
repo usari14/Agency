@@ -12,11 +12,8 @@
     --color-footerbg: #250E3E;
     --color-textclr: #4B4B4B;
     --color-textclr2: #F9F5E3;
-}
-
-:root {
-    --font-pacifico: "Pacifico", serif;
-    --font-primary: "Poppins", serif;
+    --font-pacifico: "Pacifico", cursive, sans-serif;
+    --font-primary: "Poppins", sans-serif;
 }
 
 html {
@@ -26,6 +23,7 @@ html {
 body {
     font-family: var(--font-primary);
     overflow-x: hidden;
+    font-display: swap;
 }
 
 .container {
@@ -61,9 +59,6 @@ body {
     font-weight: bold;
 }
 
-.pacifico {
-    font-family: var(--font-pacifico);
-}
 
 .banner-text {
     transition: transform 1s ease-out;

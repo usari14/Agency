@@ -1,4 +1,6 @@
-AOS.init();
+document.addEventListener("DOMContentLoaded", function () {
+    AOS.init();
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('menu-toggle');
@@ -40,38 +42,15 @@ navLinks.forEach(link => {
 });
 
 
-// document.getElementById("dropdownButton").addEventListener("click", function () {
-//     document.getElementById("dropdownMenu").classList.toggle("hidden");
-// });
-
-// document.getElementById("contactButton").addEventListener("click", function () {
-//     let dropdown = document.getElementById("contactDropdown");
-//     dropdown.classList.toggle("hidden");
-// });
-
-
-// const banner = document.querySelector('.banner');
-// const text = document.querySelector('.banner-text');
-
-// banner.addEventListener('mousemove', (e) => {
-//     const { offsetWidth: width, offsetHeight: height } = banner;
-//     const { offsetX: mouseX, offsetY: mouseY } = e;
-//     const moveX = (mouseX / width) - 0.5;
-//     const moveY = (mouseY / height) - 0.5;
-//     text.style.transform = `translate(${moveX * 30}px, ${moveY * 10}px)`;
-// });
-
-
-window.onload = function () {
-    setTimeout(() => {
-        document.getElementById("preloader").classList.add("opacity-0");
-        document.getElementById("content").style.opacity = "1";
-        setTimeout(() => {
-            document.getElementById("preloader").style.display = "none";
-        }, 700);
-    }, 1500);
-};
-
+// window.onload = function () {
+//     setTimeout(() => {
+//         document.getElementById("preloader").classList.add("opacity-0");
+//         document.getElementById("content").style.opacity = "1";
+//         setTimeout(() => {
+//             document.getElementById("preloader").style.display = "none";
+//         }, 700);
+//     }, 1500);
+// };
 
 // carousel
 
@@ -101,7 +80,6 @@ $(document).ready(function () {
     });
 });
 
-// clients
 
 $(document).ready(function () {
     $(".client-carousel").owlCarousel({
@@ -121,8 +99,6 @@ $(document).ready(function () {
     });
 });
 
-
-// brand-carousel
 
 $(document).ready(function () {
     $(".brand-carousel").owlCarousel({
