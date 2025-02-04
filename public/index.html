@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Design Agency</title>
+    <meta name="description"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien at odio bibendum tincidunt." />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -18,6 +20,7 @@
 </head>
 
 <body class="font-primary">
+
     <!-- <div id="preloader"
         class="fixed top-0 left-0 w-full h-screen bg-footerbg flex justify-center items-center z-50 transition-all duration-700">
         <div class="h-14 w-14 border-4 border-primary rounded-md slow-spin"></div>
@@ -25,10 +28,10 @@
 
     <div id="content">
 
-        <nav class="absolute top-0 w-full z-20">
+        <header class="absolute top-0 w-full z-20">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img loading="lazy" src="./assets/logo-agency.png" width="96" height="96" class="w-24 lg:w-52"
+                    <img loading="lazy" src="./assets/logo-agency.webp" width="96" height="96" class="w-24 lg:w-52"
                         alt="company logo">
                 </a>
                 <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -101,10 +104,10 @@
             <div id="overlay"
                 class="fixed inset-0 hidden md:hidden z-20 backdrop-blur-sm transition-opacity duration-300 ease-in-out">
             </div>
-        </nav>
+        </header>
 
         <section class="banner relative w-full bg-black">
-            <img src="./assets/banner4.jpg" alt="Creative Digital Web Agency - Amaze Expertise" width="2500"
+            <img src="./assets/banner4.webp" alt="Creative Digital Web Agency - Amaze Expertise" width="2500"
                 height="1000" class="w-full h-72 md:h-auto object-cover" style="filter: brightness(30%)" loading="lazy">
             <div
                 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-full max-w-screen-xl px-6 banner-text">
@@ -121,582 +124,597 @@
             </div>
         </section>
 
-        <!-- about -->
-        <section class="part bg-white" id="about">
-            <div class="container mx-auto px-4 lg:px-6 py-6 lg:py-10">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center justify-center">
-                    <div class="space-y-2 md:space-y-4">
-                        <h2 class="text-footerbg text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight relative md:z-20"
-                            data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-                            Creative & Responsive Web Design Solutions for Businesses
-                        </h2>
-                        <span class="hidden md:block relative bottom-0 lg:bottom-14 left-0 lg:left-28 
+        <div class="main">
+
+            <!-- about -->
+            <section class="part bg-white" id="about">
+                <div class="container mx-auto px-4 lg:px-6 py-6 lg:py-10">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center justify-center">
+                        <div class="space-y-2 md:space-y-4">
+                            <h2 class="text-footerbg text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight relative md:z-20"
+                                data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                                Creative & Responsive Web Design Solutions for Businesses
+                            </h2>
+                            <span class="hidden md:block relative bottom-0 lg:bottom-14 left-0 lg:left-28 
                             text-5xl sm:text-7xl lg:text-9xl font-extrabold text-gray-100 md:z-10 italic opacity-30"
-                            data-aos="fade-up" data-aos-duration="800">
-                            Design
-                        </span>
-                        <p class="text-base sm:text-lg text-font-medium italic">
-                            Our expert web designers craft **custom, user-friendly websites** that enhance
-                            brand identity and improve user experience. We specialize in **responsive design, UI/UX, and
-                            SEO-optimized websites** tailored to your business needs.
-                        </p>
-                    </div>
-                    <div class="relative">
-                        <img width="600" height="400" loading="lazy" src="./assets/video.jpg"
-                            alt="Professional Web Design and UI/UX Services - Agency" class="w-full rounded-lg"
-                            data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-                        <a href="#default-modal" aria-label="Watch Our Web Design Video"
-                            data-modal-target="default-modal" data-modal-toggle="default-modal"
-                            class="hover:bg-accent absolute top-1/2 left-1/2 bg-primary hover:text-secondary py-5 px-6 rounded-full 
+                                data-aos="fade-up" data-aos-duration="800">
+                                Design
+                            </span>
+                            <p class="text-base sm:text-lg text-font-medium italic">
+                                Our expert web designers craft **custom, user-friendly websites** that enhance
+                                brand identity and improve user experience. We specialize in **responsive design, UI/UX,
+                                and
+                                SEO-optimized websites** tailored to your business needs.
+                            </p>
+                        </div>
+                        <div class="relative">
+                            <img width="600" height="400" loading="lazy" src="./assets/video.jpg"
+                                alt="Professional Web Design and UI/UX Services - Agency" class="w-full rounded-lg"
+                                data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                            <a href="#default-modal" aria-label="Watch Our Web Design Video"
+                                data-modal-target="default-modal" data-modal-toggle="default-modal"
+                                class="hover:bg-accent absolute top-1/2 left-1/2 bg-primary hover:text-secondary py-5 px-6 rounded-full 
                             text-white transition-all duration-500 ease-in-out text-4xl transform -translate-x-1/2 -translate-y-1/2">
-                            <i class="fa-solid fa-play"></i>
-                        </a>
-                        <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center 
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                            <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center 
                             items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                            <div class="relative p-4 w-full max-w-2xl max-h-full">
-                                <div class="modal-content">
-                                    <img width="600" height="400" loading="lazy" src="./assets/video.jpg"
-                                        alt="Web Design Portfolio Video">
+                                <div class="relative p-4 w-full max-w-2xl max-h-full">
+                                    <div class="modal-content">
+                                        <img width="600" height="400" loading="lazy" src="./assets/video.jpg"
+                                            alt="Web Design Portfolio Video">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- services -->
-        <section class="services part bg-bgcolor" id="services">
-            <div class="container mx-auto py-14">
-                <div class="mb-6 lg:mb-14">
-                    <ul class="flex gap-10 flex-wrap -mb-px text-sm font-medium text-center" data-aos="fade-up"
-                        data-aos-delay="300" data-aos-duration="1000" id="default-styled-tab"
-                        data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-white bg-primary"
-                        data-tabs-inactive-classes="text-secondary hover:text-white bg-gray-100 hover:bg-primary transition-all duration-700 ease-in-out"
-                        role="tablist">
-                        <div class="owl-carousel tab-carousel owl-theme">
-                            <li class="me-2" role="presentation">
-                                <button
-                                    class="inline-block p-4 cursor-pointer lg:p-10 text-left text-xl lg:text-3xl font-bold"
-                                    id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab"
-                                    aria-controls="profile" aria-selected="false"><span
-                                        class="text-3xl lg:text-7xl">01</span>
-                                    <br> Web Design </button>
-                            </li>
-                            <li class="me-2" role="presentation">
-                                <button
-                                    class="inline-block p-4 cursor-pointer lg:p-10 text-left text-xl lg:text-3xl font-bold"
-                                    id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button"
-                                    role="tab" aria-controls="dashboard" aria-selected="false"><span
-                                        class="text-3xl lg:text-7xl">02</span>
-                                    <br> Development</button>
-                            </li>
-                            <li class="me-2" role="presentation">
-                                <button
-                                    class="inline-block p-4 cursor-pointer lg:p-10 text-left text-xl lg:text-3xl  font-bold"
-                                    id="settings-styled-tab" data-tabs-target="#styled-settings" type="button"
-                                    role="tab" aria-controls="settings" aria-selected="false"><span
-                                        class="text-3xl lg:text-7xl">03</span>
-                                    <br> Mobile App</button>
-                            </li>
-                            <li role="presentation">
-                                <button
-                                    class="inline-block p-4 cursor-pointer lg:p-10 text-left text-xl lg:text-3xl  font-bold"
-                                    id="contacts-styled-tab" data-tabs-target="#styled-contacts" type="button"
-                                    role="tab" aria-controls="contacts" aria-selected="false"><span
-                                        class="text-3xl lg:text-7xl">04</span>
-                                    <br> SEO Marketing</button>
-                            </li>
-                        </div>
-                    </ul>
-                </div>
-                <div id="default-styled-tab-content">
-                    <div class="hidden p-4" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
-                            <div class="pr-8 mb-10 lg:mb-0">
-                                <h4 class="text-3xl md:text-4xl font-bold mb-2 md:mb-4">Professional Web Design Agency
-                                </h4>
-                                <p class="mb-2 text-sm md:text-lg">Web design is the process of creating
-                                    websites. It encompasses
-                                    several
-                                    different aspects, including web page layout, content production, and it
-                                    graphic design.</p>
-                                <p class="mb-4 md:mb-8 text-sm md:text-lg">While the terms web design and web
-                                    development are often used of
-                                    this
-                                    interchangeably, web design is technically a subset of the broader lets an
-                                    category of web development.</p>
-                                <a href="#portfolio"
-                                    class="bg-primary px-8 py-2 text-white text-lg border-2 border-primary hover:bg-transparent hover:text-secondary transition-transform duration-500 ease-in-out font-semibold">
-                                    Read More
-                                </a>
+            <!-- services -->
+            <section class="services part bg-bgcolor" id="services">
+                <div class="container mx-auto py-14">
+                    <div class="mb-6 lg:mb-14">
+                        <ul class="flex gap-10 flex-wrap -mb-px text-sm font-medium text-center" data-aos="fade-up"
+                            data-aos-delay="300" data-aos-duration="1000" id="default-styled-tab"
+                            data-tabs-toggle="#default-styled-tab-content"
+                            data-tabs-active-classes="text-white bg-primary"
+                            data-tabs-inactive-classes="text-secondary hover:text-white bg-gray-100 hover:bg-primary transition-all duration-700 ease-in-out"
+                            role="tablist">
+                            <div class="owl-carousel tab-carousel owl-theme">
+                                <li class="me-2" role="presentation">
+                                    <button
+                                        class="inline-block p-4 cursor-pointer lg:p-10 text-left text-xl lg:text-3xl font-bold"
+                                        id="profile-styled-tab" data-tabs-target="#styled-profile" type="button"
+                                        role="tab" aria-controls="profile" aria-selected="false"><span
+                                            class="text-3xl lg:text-7xl">01</span>
+                                        <br> Web Design </button>
+                                </li>
+                                <li class="me-2" role="presentation">
+                                    <button
+                                        class="inline-block p-4 cursor-pointer lg:p-10 text-left text-xl lg:text-3xl font-bold"
+                                        id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button"
+                                        role="tab" aria-controls="dashboard" aria-selected="false"><span
+                                            class="text-3xl lg:text-7xl">02</span>
+                                        <br> Development</button>
+                                </li>
+                                <li class="me-2" role="presentation">
+                                    <button
+                                        class="inline-block p-4 cursor-pointer lg:p-10 text-left text-xl lg:text-3xl  font-bold"
+                                        id="settings-styled-tab" data-tabs-target="#styled-settings" type="button"
+                                        role="tab" aria-controls="settings" aria-selected="false"><span
+                                            class="text-3xl lg:text-7xl">03</span>
+                                        <br> Mobile App</button>
+                                </li>
+                                <li role="presentation">
+                                    <button
+                                        class="inline-block p-4 cursor-pointer lg:p-10 text-left text-xl lg:text-3xl  font-bold"
+                                        id="contacts-styled-tab" data-tabs-target="#styled-contacts" type="button"
+                                        role="tab" aria-controls="contacts" aria-selected="false"><span
+                                            class="text-3xl lg:text-7xl">04</span>
+                                        <br> SEO Marketing</button>
+                                </li>
                             </div>
-                            <div class="flex justify-center">
-                                <img width="" height="" loading="lazy" src="./assets/service1.png" class="w-auto"
-                                    alt="Professional Web Design Agency UI/UX design">
-                            </div>
-                        </div>
+                        </ul>
                     </div>
-                    <div class="hidden p-4" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
-                            <div class="pr-8 mb-10 lg:mb-0">
-                                <h4 class="text-3xl md:text-4xl font-bold mb-2 md:mb-4">Professional Development</h4>
-                                <p class="mb-2 text-sm md:text-lg">Web design is the process of creating
-                                    websites. It encompasses
-                                    several
-                                    different aspects, including web page layout, content production, and it
-                                    graphic design.</p>
-                                <p class="mb-4 md:mb-8 text-sm md:text-lg">While the terms web design and web
-                                    development are often used of
-                                    this
-                                    interchangeably, web design is technically a subset of the broader lets an
-                                    category of web development.</p>
-                                <a href="#portfolio"
-                                    class="bg-primary px-8 py-2 text-white text-lg border-2 border-primary hover:bg-transparent hover:text-secondary transition-transform duration-500 ease-in-out font-semibold">
-                                    Read More
-                                </a>
-                            </div>
-                            <div class="flex justify-center">
-                                <img width="" height="" loading="lazy" src="./assets//service2.png" class="w-auto"
-                                    alt="Professional Development for any business">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hidden p-4" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
-                            <div class="pr-8 mb-10 lg:mb-0">
-                                <h4 class="text-3xl md:text-4xl font-bold mb-2 md:mb-4">Professional Mobile App
-                                    Development Agency</h4>
-                                <p class="mb-2 text-sm md:text-lg">Web design is the process of creating
-                                    websites. It encompasses
-                                    several
-                                    different aspects, including web page layout, content production, and it
-                                    graphic design.</p>
-                                <p class="mb-4 md:mb-8 text-sm md:text-lg">While the terms web design and web
-                                    development are often used of
-                                    this
-                                    interchangeably, web design is technically a subset of the broader lets an
-                                    category of web development.</p>
-                                <a href="#portfolio"
-                                    class="bg-primary px-8 py-2 text-white text-lg border-2 border-primary hover:bg-transparent hover:text-secondary transition-transform duration-500 ease-in-out font-semibold">
-                                    Read More
-                                </a>
-                            </div>
-                            <div class="flex justify-center">
-                                <img width="" height="" loading="lazy" src="./assets//service3.png" class="w-auto"
-                                    alt="Mobile App">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hidden p-4" id="styled-contacts" role="tabpanel" aria-labelledby="contacts-tab">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
-                            <div class="pr-8 mb-10 lg:mb-0">
-                                <h4 class="text-3xl md:text-4xl font-bold mb-2 md:mb-4">SEO Growth 100%</h4>
-                                <p class="mb-2 text-sm md:text-lg">Web design is the process of creating
-                                    websites. It encompasses
-                                    several
-                                    different aspects, including web page layout, content production, and it
-                                    graphic design.</p>
-                                <p class="mb-4 md:mb-8 text-sm md:text-lg">While the terms web design and web
-                                    development are often used of
-                                    this
-                                    interchangeably, web design is technically a subset of the broader lets an
-                                    category of web development.</p>
-                                <a href="#portfolio"
-                                    class="bg-primary px-8 py-2 text-white text-lg border-2 border-primary hover:bg-transparent hover:text-secondary transition-transform duration-500 ease-in-out font-semibold">
-                                    Read More
-                                </a>
-                            </div>
-                            <div class="flex justify-center">
-                                <img width="" height="" loading="lazy" src="./assets//service4.png" class="w-auto"
-                                    alt="SEO">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- portfolio -->
-        <section class="portfolio part" id="portfolio">
-            <div class="container mx-auto py-6 md:py-14">
-                <h3 class="text-footerbg text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight relative md:z-20 text-left px-3 xl:px-0 mb-8 md:mb-0"
-                    data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                    Take A Look At Our Featured Works
-                </h3>
-                <span
-                    class="hidden md:block relative bottom-0 lg:bottom-14 left-0 lg:left-28 text-5xl sm:text-7xl lg:text-9xl font-extrabold text-gray-100 md:z-10 italic opacity-30"
-                    data-aos="fade-up" data-aos-duration="1000">
-                    PORTFOLIO
-                </span>
-                <div class="grid grid-cols-1 lg:grid-cols-2">
-                    <div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2">
-                            <div class="relative group overflow-hidden">
-                                <div class="overflow-hidden">
-                                    <a href="#"><img width="96" height="96" loading="lazy" src="./assets/pf1.jpg"
-                                            alt="Web UI/UX"
-                                            class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125"></a>
-                                </div>
-                                <div
-                                    class="absolute bottom-[-100%] left-1/2 w-52 -translate-x-1/2 bg-white text-black text-center py-2 transition-all duration-500 group-hover:bottom-5">
-                                    <h5 class="text-2xl leading-7">Name</h5>
-                                    <p class="text-base">Small description</p>
-                                </div>
-                            </div>
-                            <div class="relative group overflow-hidden">
-                                <div class="overflow-hidden">
-                                    <a href="#">
-                                        <img width="96" height="96" loading="lazy" src="./assets/pf2.jpg"
-                                            alt="App development"
-                                            class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
+                    <div id="default-styled-tab-content">
+                        <div class="hidden p-4" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
+                                <div class="pr-8 mb-10 lg:mb-0">
+                                    <h3 class="text-3xl md:text-4xl font-bold mb-2 md:mb-4">Professional Web Design
+                                        Agency
+                                    </h3>
+                                    <p class="mb-2 text-sm md:text-lg">Web design is the process of creating
+                                        websites. It encompasses
+                                        several
+                                        different aspects, including web page layout, content production, and it
+                                        graphic design.</p>
+                                    <p class="mb-4 md:mb-8 text-sm md:text-lg">While the terms web design and web
+                                        development are often used of
+                                        this
+                                        interchangeably, web design is technically a subset of the broader lets an
+                                        category of web development.</p>
+                                    <a href="#portfolio"
+                                        class="bg-primary px-8 py-2 text-white text-lg border-2 border-primary hover:bg-transparent hover:text-secondary transition-transform duration-500 ease-in-out font-semibold">
+                                        Read More
                                     </a>
                                 </div>
-                                <div
-                                    class="absolute bottom-[-100%] left-1/2 w-52 mx-auto bg-white text-black text-center py-2 
+                                <div class="flex justify-center">
+                                    <img width="" height="" loading="lazy" src="./assets/service1.webp" class="w-auto"
+                                        alt="Professional Web Design Agency UI/UX design">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden p-4" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                            <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
+                                <div class="pr-8 mb-10 lg:mb-0">
+                                    <h3 class="text-3xl md:text-4xl font-bold mb-2 md:mb-4">Professional Development
+                                    </h3>
+                                    <p class="mb-2 text-sm md:text-lg">Web design is the process of creating
+                                        websites. It encompasses
+                                        several
+                                        different aspects, including web page layout, content production, and it
+                                        graphic design.</p>
+                                    <p class="mb-4 md:mb-8 text-sm md:text-lg">While the terms web design and web
+                                        development are often used of
+                                        this
+                                        interchangeably, web design is technically a subset of the broader lets an
+                                        category of web development.</p>
+                                    <a href="#portfolio"
+                                        class="bg-primary px-8 py-2 text-white text-lg border-2 border-primary hover:bg-transparent hover:text-secondary transition-transform duration-500 ease-in-out font-semibold">
+                                        Read More
+                                    </a>
+                                </div>
+                                <div class="flex justify-center">
+                                    <img width="" height="" loading="lazy" src="./assets//service2.webp" class="w-auto"
+                                        alt="Professional Development for any business">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden p-4" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
+                            <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
+                                <div class="pr-8 mb-10 lg:mb-0">
+                                    <h3 class="text-3xl md:text-4xl font-bold mb-2 md:mb-4">Professional Mobile App
+                                        Development Agency</h3>
+                                    <p class="mb-2 text-sm md:text-lg">Web design is the process of creating
+                                        websites. It encompasses
+                                        several
+                                        different aspects, including web page layout, content production, and it
+                                        graphic design.</p>
+                                    <p class="mb-4 md:mb-8 text-sm md:text-lg">While the terms web design and web
+                                        development are often used of
+                                        this
+                                        interchangeably, web design is technically a subset of the broader lets an
+                                        category of web development.</p>
+                                    <a href="#portfolio"
+                                        class="bg-primary px-8 py-2 text-white text-lg border-2 border-primary hover:bg-transparent hover:text-secondary transition-transform duration-500 ease-in-out font-semibold">
+                                        Read More
+                                    </a>
+                                </div>
+                                <div class="flex justify-center">
+                                    <img width="" height="" loading="lazy" src="./assets//service3.webp" class="w-auto"
+                                        alt="Mobile App">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden p-4" id="styled-contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                            <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
+                                <div class="pr-8 mb-10 lg:mb-0">
+                                    <h3 class="text-3xl md:text-4xl font-bold mb-2 md:mb-4">SEO Growth 100%</h3>
+                                    <p class="mb-2 text-sm md:text-lg">Web design is the process of creating
+                                        websites. It encompasses
+                                        several
+                                        different aspects, including web page layout, content production, and it
+                                        graphic design.</p>
+                                    <p class="mb-4 md:mb-8 text-sm md:text-lg">While the terms web design and web
+                                        development are often used of
+                                        this
+                                        interchangeably, web design is technically a subset of the broader lets an
+                                        category of web development.</p>
+                                    <a href="#portfolio"
+                                        class="bg-primary px-8 py-2 text-white text-lg border-2 border-primary hover:bg-transparent hover:text-secondary transition-transform duration-500 ease-in-out font-semibold">
+                                        Read More
+                                    </a>
+                                </div>
+                                <div class="flex justify-center">
+                                    <img width="" height="" loading="lazy" src="./assets//service4.webp" class="w-auto"
+                                        alt="SEO">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- portfolio -->
+            <section class="portfolio part" id="portfolio">
+                <div class="container mx-auto py-6 md:py-14">
+                    <h3 class="text-footerbg text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight relative md:z-20 text-left px-3 xl:px-0 mb-8 md:mb-0"
+                        data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                        Take A Look At Our Featured Works
+                    </h3>
+                    <span
+                        class="hidden md:block relative bottom-0 lg:bottom-14 left-0 lg:left-28 text-5xl sm:text-7xl lg:text-9xl font-extrabold text-gray-100 md:z-10 italic opacity-30"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        PORTFOLIO
+                    </span>
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2">
+                                <div class="relative group overflow-hidden">
+                                    <div class="overflow-hidden">
+                                        <a href="#"><img width="96" height="96" loading="lazy" src="./assets/pf1.webp"
+                                                alt="Web UI/UX"
+                                                class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125"></a>
+                                    </div>
+                                    <div
+                                        class="absolute bottom-[-100%] left-1/2 w-52 -translate-x-1/2 bg-white text-black text-center py-2 transition-all duration-500 group-hover:bottom-5">
+                                        <h5 class="text-2xl leading-7">Name</h5>
+                                        <p class="text-base">Small description</p>
+                                    </div>
+                                </div>
+                                <div class="relative group overflow-hidden">
+                                    <div class="overflow-hidden">
+                                        <a href="#">
+                                            <img width="96" height="96" loading="lazy" src="./assets/pf2.webp"
+                                                alt="App development"
+                                                class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="absolute bottom-[-100%] left-1/2 w-52 mx-auto bg-white text-black text-center py-2 
                                                     transition-all duration-500 transform -translate-x-1/2 group-hover:bottom-5">
-                                    <h5 class="text-2xl leading-7">Name</h5>
-                                    <p class="text-base">Small description</p>
-                                </div>
+                                        <h5 class="text-2xl leading-7">Name</h5>
+                                        <p class="text-base">Small description</p>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative group overflow-hidden">
+                            <div class="overflow-hidden">
+                                <a href="#">
+                                    <img width="96" height="96" loading="lazy" src="./assets/pf3.jpg"
+                                        alt="SEO marketing"
+                                        class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
+                                </a>
+                            </div>
+                            <div
+                                class="absolute bottom-[-100%] left-1/2 w-52 -translate-x-1/2 bg-white text-black text-center py-2 transition-all duration-500 group-hover:bottom-5">
+                                <h5 class="text-2xl leading-7">Name</h5>
+                                <p class="text-base">Small description</p>
                             </div>
                         </div>
                     </div>
-                    <div class="relative group overflow-hidden">
-                        <div class="overflow-hidden">
-                            <a href="#">
-                                <img width="96" height="96" loading="lazy" src="./assets/pf3.jpg" alt="SEO marketing"
-                                    class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
-                            </a>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div class="relative group overflow-hidden">
+                            <div class="overflow-hidden">
+                                <a href="#">
+                                    <img width="96" height="96" loading="lazy" src="./assets/pf4.webp" alt="Development"
+                                        class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
+                                </a>
+                            </div>
+                            <div
+                                class="absolute bottom-[-100%] left-1/2 w-52 -translate-x-1/2 bg-white text-black text-center py-2 transition-all duration-500 group-hover:bottom-5">
+                                <h5 class="text-2xl leading-7">Name</h5>
+                                <p class="text-base">Small description</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2">
+                                <div class="relative group overflow-hidden">
+                                    <div class="overflow-hidden">
+                                        <a href="#">
+                                            <img width="96" height="96" loading="lazy" src="./assets/pf5.webp"
+                                                alt="Best UI/UX design"
+                                                class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="absolute bottom-[-100%] left-1/2 w-52 -translate-x-1/2 bg-white text-black text-center py-2 transition-all duration-500 group-hover:bottom-5">
+                                        <h5 class="text-2xl leading-7">Name</h5>
+                                        <p class="text-base">Small description</p>
+                                    </div>
+                                </div>
+                                <div class="relative group overflow-hidden">
+                                    <div class="overflow-hidden">
+                                        <a href="#">
+                                            <img width="96" height="96" loading="lazy" src="./assets/pf6.webp"
+                                                alt="Web Agency"
+                                                class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="absolute bottom-[-100%] left-1/2 w-52 -translate-x-1/2 bg-white text-black text-center py-2 transition-all duration-500 group-hover:bottom-5">
+                                        <h5 class="text-2xl leading-7">Name</h5>
+                                        <p class="text-base">Small description</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- review section -->
+            <section class="reviews part bg-bgcolor" id="reviews">
+                <div class="container mx-auto py-10 px-3 xl:px-0">
+                    <h3 class="text-footerbg text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight relative md:z-20 text-left mb-8 md:mb-0"
+                        data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                        What Our Client Say About Us
+                    </h3>
+                    <span
+                        class="hidden md:block relative bottom-0 lg:bottom-14 left-0 lg:left-28 text-5xl sm:text-7xl lg:text-9xl font-extrabold text-gray-200 md:z-10 italic opacity-30"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        CLIENTS
+                    </span>
+                    <div class="owl-carousel client-carousel owl-theme">
+                        <div
+                            class="flex flex-col items-center bg-white px-4 md:px-10 py-10 md:py-14 shadow-lg rounded-lg text-center hover:scale-95 transition-all duration-700 ease-in-out">
+                            <blockquote
+                                class="text-secondary text-sm md:text-lg leading-relaxed font-normal italic mb-7">
+                                "This service was amazing! Everything was smooth and professional.This service was
+                                amazing! Everything was smooth and professional.This service was amazing! Everything
+                                was smooth and professional.This service was amazing! Everything was smooth and
+                                professional."
+                            </blockquote>
+                            <div class="relative mb-8">
+                                <img width="" height="" loading="lazy" src="./assets/pf1.webp" alt="Client Image 1"
+                                    class="w-32 h-32 object-cover rounded-full border-2 border-gray-300 shadow-md">
+                            </div>
+                            <div class="">
+                                <h4 class="text-lg text-black font-semibold">John Doe</h4>
+                                <p class="text-sm text-primary">CEO, Company XYZ</p>
+                            </div>
                         </div>
                         <div
-                            class="absolute bottom-[-100%] left-1/2 w-52 -translate-x-1/2 bg-white text-black text-center py-2 transition-all duration-500 group-hover:bottom-5">
-                            <h5 class="text-2xl leading-7">Name</h5>
-                            <p class="text-base">Small description</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-2">
-                    <div class="relative group overflow-hidden">
-                        <div class="overflow-hidden">
-                            <a href="#">
-                                <img width="96" height="96" loading="lazy" src="./assets/pf4.jpg" alt="Development"
-                                    class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
-                            </a>
+                            class="flex flex-col items-center bg-white px-4 md:px-10 py-10 md:py-14 shadow-lg rounded-lg text-center hover:scale-95 transition-all duration-700 ease-in-out">
+                            <blockquote
+                                class="text-secondary text-sm md:text-lg leading-relaxed font-normal italic mb-7">
+                                "This service was amazing! Everything was smooth and professional.This service was
+                                amazing! Everything was smooth and professional.This service was amazing! Everything
+                                was smooth and professional.This service was amazing! Everything was smooth and
+                                professional."
+                            </blockquote>
+                            <div class="relative mb-8">
+                                <img width="" height="" loading="lazy" src="./assets/pf1.webp" alt="Client Image 2"
+                                    class="w-32 h-32 object-cover rounded-full border-2 border-gray-300 shadow-md">
+                            </div>
+                            <div class="">
+                                <h4 class="text-lg text-black font-semibold">John Doe</h4>
+                                <p class="text-sm text-primary">CEO, Company XYZ</p>
+                            </div>
                         </div>
                         <div
-                            class="absolute bottom-[-100%] left-1/2 w-52 -translate-x-1/2 bg-white text-black text-center py-2 transition-all duration-500 group-hover:bottom-5">
-                            <h5 class="text-2xl leading-7">Name</h5>
-                            <p class="text-base">Small description</p>
+                            class="flex flex-col items-center bg-white px-4 md:px-10 py-10 md:py-14 shadow-lg rounded-lg text-center hover:scale-95 transition-all duration-700 ease-in-out">
+                            <blockquote
+                                class="text-secondary text-sm md:text-lg leading-relaxed font-normal italic mb-7">
+                                "This service was amazing! Everything was smooth and professional.This service was
+                                amazing! Everything was smooth and professional.This service was amazing! Everything
+                                was smooth and professional.This service was amazing! Everything was smooth and
+                                professional."
+                            </blockquote>
+                            <div class="relative mb-8">
+                                <img width="" height="" loading="lazy" src="./assets/pf1.webp" alt="Client Image 3"
+                                    class="w-32 h-32 object-cover rounded-full border-2 border-gray-300 shadow-md">
+                            </div>
+                            <div class="">
+                                <h4 class="text-lg text-black font-semibold">John Doe</h4>
+                                <p class="text-sm text-primary">CEO, Company XYZ</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-col items-center bg-white px-4 md:px-10 py-10 md:py-14 shadow-lg rounded-lg text-center hover:scale-95 transition-all duration-700 ease-in-out">
+                            <blockquote
+                                class="text-secondary text-sm md:text-lg leading-relaxed font-normal italic mb-7">
+                                "This service was amazing! Everything was smooth and professional.This service was
+                                amazing! Everything was smooth and professional.This service was amazing! Everything
+                                was smooth and professional.This service was amazing! Everything was smooth and
+                                professional."
+                            </blockquote>
+                            <div class="relative mb-8">
+                                <img width="" height="" loading="lazy" src="./assets/pf1.webp" alt="Client Image 4"
+                                    class="w-32 h-32 object-cover rounded-full border-2 border-gray-300 shadow-md">
+                            </div>
+                            <div class="">
+                                <h4 class="text-lg text-black font-semibold">John Doe</h4>
+                                <p class="text-sm text-primary">CEO, Company XYZ</p>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2">
-                            <div class="relative group overflow-hidden">
-                                <div class="overflow-hidden">
-                                    <a href="#">
-                                        <img width="96" height="96" loading="lazy" src="./assets/pf5.jpg"
-                                            alt="Best UI/UX design"
-                                            class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
-                                    </a>
+                </div>
+            </section>
+
+            <!-- email -->
+            <section id="email"
+                class="relative h-80 md:h-[600px] bg-fixed bg-center bg-cover before:absolute before:inset-0 before:bg-footerbg/90"
+                style="background-image: url('./assets//herosection.jpg');">
+                <div class="container mx-auto relative flex items-center justify-center h-full">
+                    <div class="text-white text-center px-5 md:px-32 rounded-lg">
+                        <h2 class="text-3xl md:text-7xl leading-tight mb-6 font-bold">Let Your Email Address
+                            Speak for You</h2>
+                        <a href="#"
+                            class="bg-primary px-14 py-3 border border-primary transition-all duration-500 ease-in-out hover:bg-transparent">Read
+                            More</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- pricing -->
+            <section class="pricing part bg-bgcolor" id="pricing">
+                <div class="container mx-auto py-4 md:py-16 px-4">
+                    <h3 class="text-footerbg text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight relative md:z-20 text-left mb-8 md:mb-0"
+                        data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                        Panoramic Solutions Top To Bottom
+                    </h3>
+                    <span
+                        class="hidden md:block relative bottom-0 lg:bottom-14 left-0 lg:left-28 text-5xl sm:text-7xl lg:text-9xl font-extrabold text-gray-200 md:z-10 italic opacity-30"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        PRICING
+                    </span>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                        <div
+                            class="pricing-card bg-white px-5 md:px-10 py-8 md:py-14 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                            <h3 class="text-2xl font-bold text-left mb-4">Personal</h3>
+                            <p class="text-left text-xl mb-4">Basic and simple website.
+                            </p>
+                            <p class="text-3xl text-secondary font-bold flex items-center mb-4">$ <span
+                                    class="text-6xl">10</span></p>
+                            <ul class="space-y-3 mb-7">
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">
+                                    Mobile-Optimized Website
+                                </li>
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Powerful
+                                    Website Metrics
+                                </li>
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Free
+                                    Custom Domain
+                                </li>
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">24/7
+                                    Customer Support
+                                </li>
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Fully
+                                    Integrated E-Commerce
+                                </li>
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Sell
+                                    Unlimited Products & Accept Donations
+                                </li>
+                            </ul>
+                            <button
+                                class="w-full py-6 cursor-pointer bg-secondary text-white border border-secondary font-bold hover:bg-transparent hover:text-black transition-all duration-900 uppercase">try
+                                it now</button>
+                        </div>
+
+                        <div
+                            class="pricing-card bg-white px-5 md:px-10 py-8 md:py-14 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                            <h3 class="text-2xl text-primary font-bold text-left mb-4">Professional
+                            </h3>
+                            <p class="text-left text-xl mb-4">Basic and simple website.
+                            </p>
+                            <p class="text-3xl text-primary font-bold flex items-center mb-4">$ <span
+                                    class="text-6xl">16</span></p>
+                            <ul class="space-y-3 mb-7">
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">
+                                    Mobile-Optimized Website
+                                </li>
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Powerful
+                                    Website Metrics
+                                </li>
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Free
+                                    Custom Domain
+                                </li>
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">24/7
+                                    Customer Support
+                                </li>
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Fully
+                                    Integrated E-Commerce
+                                </li>
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Sell
+                                    Unlimited Products & Accept Donations
+                                </li>
+                            </ul>
+                            <button
+                                class="w-full py-6 cursor-pointer bg-primary text-white border border-primary font-bold hover:bg-transparent hover:text-black transition-all duration-900 uppercase">try
+                                it now</button>
+                        </div>
+
+                        <div
+                            class="pricing-card bg-white px-5 md:px-10 py-8 md:py-14 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                            <h3 class="text-2xl font-bold text-left mb-4">Ultimate</h3>
+                            <p class="text-left text-xl mb-4">Basic and simple website.
+                            </p>
+                            <p class="text-3xl text-secondary font-bold flex items-center mb-4">$ <span
+                                    class="text-6xl">30</span></p>
+                            <ul class="space-y-3 mb-7">
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">
+                                    Mobile-Optimized Website
+                                </li>
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Powerful
+                                    Website Metrics
+                                </li>
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Free
+                                    Custom Domain
+                                </li>
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">24/7
+                                    Customer Support
+                                </li>
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Fully
+                                    Integrated E-Commerce
+                                </li>
+                                <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Sell
+                                    Unlimited Products & Accept Donations
+                                </li>
+                            </ul>
+                            <button
+                                class="w-full py-6 cursor-pointer bg-secondary text-white border border-secondary font-bold hover:bg-transparent hover:text-black transition-all duration-900 uppercase">try
+                                it now</button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- contact -->
+            <section class="contact part" id="contact">
+                <div class="container mx-auto py-6 md:py-14 px-3 xl:px-0">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <div>
+                            <h1 class="text-footerbg text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight relative md:z-20 text-left mb-8 md:mb-0"
+                                data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                                Have a Project? Contact Us
+                            </h1>
+                            <span
+                                class="hidden md:block relative bottom-0 lg:bottom-10 left-0 text-7xl font-extrabold text-gray-200 md:z-10 italic opacity-30"
+                                data-aos="fade-up" data-aos-duration="1000">
+                                CONTACT
+                            </span>
+                            <form action="" method="POST" class="space-y-4">
+                                <div class="flex flex-col">
+                                    <label for="name" class="sr-only">Full Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Full Name *"
+                                        class="p-3 border h-16 border-gray-200" required />
                                 </div>
-                                <div
-                                    class="absolute bottom-[-100%] left-1/2 w-52 -translate-x-1/2 bg-white text-black text-center py-2 transition-all duration-500 group-hover:bottom-5">
-                                    <h5 class="text-2xl leading-7">Name</h5>
-                                    <p class="text-base">Small description</p>
+                                <div class="flex flex-col">
+                                    <label for="email" class="sr-only">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="Email Address *"
+                                        class="p-3 border h-16 border-gray-200" required />
                                 </div>
-                            </div>
-                            <div class="relative group overflow-hidden">
-                                <div class="overflow-hidden">
-                                    <a href="#">
-                                        <img width="96" height="96" loading="lazy" src="./assets/pf6.jpg"
-                                            alt="Web Agency"
-                                            class="w-full h-auto transform transition-all duration-1000 ease-in-out group-hover:scale-125">
-                                    </a>
+                                <div class="flex flex-col">
+                                    <label for="message" class="sr-only">Your Message</label>
+                                    <textarea id="message" name="message" placeholder="Your Message" rows="5"
+                                        class="p-3 border border-gray-200" required></textarea>
                                 </div>
-                                <div
-                                    class="absolute bottom-[-100%] left-1/2 w-52 -translate-x-1/2 bg-white text-black text-center py-2 transition-all duration-500 group-hover:bottom-5">
-                                    <h5 class="text-2xl leading-7">Name</h5>
-                                    <p class="text-base">Small description</p>
-                                </div>
-                            </div>
+                                <button type="submit"
+                                    class="w-full py-3 cursor-pointer text-lg font-semibold bg-primary border border-primary transition-all duration-900 ease-in-out text-white hover:bg-transparent hover:text-primary pointer-events-auto"
+                                    aria-label="Send your message to our team">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                        <!-- Google Map Section -->
+                        <div>
+                            <h2 class="text-2xl font-bold mb-4">Our Location</h2>
+                            <iframe class="z-50 h-72 md:h-[600px] lazyload"
+                                src="https://www.google.com/maps/embed?pb=..." width="100%" frameborder="0"
+                                style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+                                loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
+            </section>
 
-            </div>
-        </section>
+        </div>
 
-        <!-- review section -->
-        <section class="reviews part bg-bgcolor" id="reviews">
-            <div class="container mx-auto py-10 px-3 xl:px-0">
-                <h3 class="text-footerbg text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight relative md:z-20 text-left mb-8 md:mb-0"
-                    data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                    What Our Client Say About Us
-                </h3>
-                <span
-                    class="hidden md:block relative bottom-0 lg:bottom-14 left-0 lg:left-28 text-5xl sm:text-7xl lg:text-9xl font-extrabold text-gray-200 md:z-10 italic opacity-30"
-                    data-aos="fade-up" data-aos-duration="1000">
-                    CLIENTS
-                </span>
-                <div class="owl-carousel client-carousel owl-theme">
-                    <div
-                        class="flex flex-col items-center bg-white px-4 md:px-10 py-10 md:py-14 shadow-lg rounded-lg text-center hover:scale-95 transition-all duration-700 ease-in-out">
-                        <blockquote class="text-secondary text-sm md:text-lg leading-relaxed font-normal italic mb-7">
-                            "This service was amazing! Everything was smooth and professional.This service was
-                            amazing! Everything was smooth and professional.This service was amazing! Everything
-                            was smooth and professional.This service was amazing! Everything was smooth and
-                            professional."
-                        </blockquote>
-                        <div class="relative mb-8">
-                            <img width="" height="" loading="lazy" src="./assets/pf1.jpg" alt="Client Image 1"
-                                class="w-32 h-32 object-cover rounded-full border-2 border-gray-300 shadow-md">
-                        </div>
-                        <div class="">
-                            <h4 class="text-lg text-black font-semibold">John Doe</h4>
-                            <p class="text-sm text-primary">CEO, Company XYZ</p>
-                        </div>
-                    </div>
-                    <div
-                        class="flex flex-col items-center bg-white px-4 md:px-10 py-10 md:py-14 shadow-lg rounded-lg text-center hover:scale-95 transition-all duration-700 ease-in-out">
-                        <blockquote class="text-secondary text-sm md:text-lg leading-relaxed font-normal italic mb-7">
-                            "This service was amazing! Everything was smooth and professional.This service was
-                            amazing! Everything was smooth and professional.This service was amazing! Everything
-                            was smooth and professional.This service was amazing! Everything was smooth and
-                            professional."
-                        </blockquote>
-                        <div class="relative mb-8">
-                            <img width="" height="" loading="lazy" src="./assets/pf1.jpg" alt="Client Image 2"
-                                class="w-32 h-32 object-cover rounded-full border-2 border-gray-300 shadow-md">
-                        </div>
-                        <div class="">
-                            <h4 class="text-lg text-black font-semibold">John Doe</h4>
-                            <p class="text-sm text-primary">CEO, Company XYZ</p>
-                        </div>
-                    </div>
-                    <div
-                        class="flex flex-col items-center bg-white px-4 md:px-10 py-10 md:py-14 shadow-lg rounded-lg text-center hover:scale-95 transition-all duration-700 ease-in-out">
-                        <blockquote class="text-secondary text-sm md:text-lg leading-relaxed font-normal italic mb-7">
-                            "This service was amazing! Everything was smooth and professional.This service was
-                            amazing! Everything was smooth and professional.This service was amazing! Everything
-                            was smooth and professional.This service was amazing! Everything was smooth and
-                            professional."
-                        </blockquote>
-                        <div class="relative mb-8">
-                            <img width="" height="" loading="lazy" src="./assets/pf1.jpg" alt="Client Image 3"
-                                class="w-32 h-32 object-cover rounded-full border-2 border-gray-300 shadow-md">
-                        </div>
-                        <div class="">
-                            <h4 class="text-lg text-black font-semibold">John Doe</h4>
-                            <p class="text-sm text-primary">CEO, Company XYZ</p>
-                        </div>
-                    </div>
-                    <div
-                        class="flex flex-col items-center bg-white px-4 md:px-10 py-10 md:py-14 shadow-lg rounded-lg text-center hover:scale-95 transition-all duration-700 ease-in-out">
-                        <blockquote class="text-secondary text-sm md:text-lg leading-relaxed font-normal italic mb-7">
-                            "This service was amazing! Everything was smooth and professional.This service was
-                            amazing! Everything was smooth and professional.This service was amazing! Everything
-                            was smooth and professional.This service was amazing! Everything was smooth and
-                            professional."
-                        </blockquote>
-                        <div class="relative mb-8">
-                            <img width="" height="" loading="lazy" src="./assets/pf1.jpg" alt="Client Image 4"
-                                class="w-32 h-32 object-cover rounded-full border-2 border-gray-300 shadow-md">
-                        </div>
-                        <div class="">
-                            <h4 class="text-lg text-black font-semibold">John Doe</h4>
-                            <p class="text-sm text-primary">CEO, Company XYZ</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- email -->
-        <section id="email"
-            class="relative h-80 md:h-[600px] bg-fixed bg-center bg-cover before:absolute before:inset-0 before:bg-footerbg/90"
-            style="background-image: url('./assets//herosection.jpg');">
-            <div class="container mx-auto relative flex items-center justify-center h-full">
-                <div class="text-white text-center px-5 md:px-32 rounded-lg">
-                    <h2 class="text-3xl md:text-7xl leading-tight mb-6 font-bold">Let Your Email Address
-                        Speak for You</h2>
-                    <a href="#"
-                        class="bg-primary px-14 py-3 border border-primary transition-all duration-500 ease-in-out hover:bg-transparent">Read
-                        More</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- pricing -->
-        <section class="pricing part bg-bgcolor" id="pricing">
-            <div class="container mx-auto py-4 md:py-16 px-4">
-                <h3 class="text-footerbg text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight relative md:z-20 text-left mb-8 md:mb-0"
-                    data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                    Panoramic Solutions Top To Bottom
-                </h3>
-                <span
-                    class="hidden md:block relative bottom-0 lg:bottom-14 left-0 lg:left-28 text-5xl sm:text-7xl lg:text-9xl font-extrabold text-gray-200 md:z-10 italic opacity-30"
-                    data-aos="fade-up" data-aos-duration="1000">
-                    PRICING
-                </span>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                    <div
-                        class="pricing-card bg-white px-5 md:px-10 py-8 md:py-14 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                        <h3 class="text-2xl font-bold text-left mb-4">Personal</h3>
-                        <p class="text-left text-xl mb-4">Basic and simple website.
-                        </p>
-                        <p class="text-3xl text-secondary font-bold flex items-center mb-4">$ <span
-                                class="text-6xl">10</span></p>
-                        <ul class="space-y-3 mb-7">
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">
-                                Mobile-Optimized Website
-                            </li>
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Powerful
-                                Website Metrics
-                            </li>
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Free
-                                Custom Domain
-                            </li>
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">24/7
-                                Customer Support
-                            </li>
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Fully
-                                Integrated E-Commerce
-                            </li>
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Sell
-                                Unlimited Products & Accept Donations
-                            </li>
-                        </ul>
-                        <button
-                            class="w-full py-6 cursor-pointer bg-secondary text-white border border-secondary font-bold hover:bg-transparent hover:text-black transition-all duration-900 uppercase">try
-                            it now</button>
-                    </div>
-
-                    <div
-                        class="pricing-card bg-white px-5 md:px-10 py-8 md:py-14 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                        <h3 class="text-2xl text-primary font-bold text-left mb-4">Professional
-                        </h3>
-                        <p class="text-left text-xl mb-4">Basic and simple website.
-                        </p>
-                        <p class="text-3xl text-primary font-bold flex items-center mb-4">$ <span
-                                class="text-6xl">16</span></p>
-                        <ul class="space-y-3 mb-7">
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">
-                                Mobile-Optimized Website
-                            </li>
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Powerful
-                                Website Metrics
-                            </li>
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Free
-                                Custom Domain
-                            </li>
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">24/7
-                                Customer Support
-                            </li>
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Fully
-                                Integrated E-Commerce
-                            </li>
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Sell
-                                Unlimited Products & Accept Donations
-                            </li>
-                        </ul>
-                        <button
-                            class="w-full py-6 cursor-pointer bg-primary text-white border border-primary font-bold hover:bg-transparent hover:text-black transition-all duration-900 uppercase">try
-                            it now</button>
-                    </div>
-
-                    <div
-                        class="pricing-card bg-white px-5 md:px-10 py-8 md:py-14 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                        <h3 class="text-2xl font-bold text-left mb-4">Ultimate</h3>
-                        <p class="text-left text-xl mb-4">Basic and simple website.
-                        </p>
-                        <p class="text-3xl text-secondary font-bold flex items-center mb-4">$ <span
-                                class="text-6xl">30</span></p>
-                        <ul class="space-y-3 mb-7">
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">
-                                Mobile-Optimized Website
-                            </li>
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Powerful
-                                Website Metrics
-                            </li>
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Free
-                                Custom Domain
-                            </li>
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">24/7
-                                Customer Support
-                            </li>
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Fully
-                                Integrated E-Commerce
-                            </li>
-                            <li class="flex items-center text-textclr pb-4 border-b-2 border-bgcolor">Sell
-                                Unlimited Products & Accept Donations
-                            </li>
-                        </ul>
-                        <button
-                            class="w-full py-6 cursor-pointer bg-secondary text-white border border-secondary font-bold hover:bg-transparent hover:text-black transition-all duration-900 uppercase">try
-                            it now</button>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- contact -->
-        <section class="contact part" id="contact">
-            <div class="container mx-auto py-6 md:py-14 px-3 xl:px-0">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                    <div>
-                        <h1 class="text-footerbg text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight relative md:z-20 text-left mb-8 md:mb-0"
-                            data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                            Have a Project? Contact Us
-                        </h1>
-                        <span
-                            class="hidden md:block relative bottom-0 lg:bottom-10 left-0 text-7xl font-extrabold text-gray-200 md:z-10 italic opacity-30"
-                            data-aos="fade-up" data-aos-duration="1000">
-                            CONTACT
-                        </span>
-                        <form action="" method="POST" class="space-y-4">
-                            <div class="flex flex-col">
-                                <label for="name" class="sr-only">Full Name</label>
-                                <input type="text" id="name" name="name" placeholder="Full Name *"
-                                    class="p-3 border h-16 border-gray-200" required />
-                            </div>
-                            <div class="flex flex-col">
-                                <label for="email" class="sr-only">Email Address</label>
-                                <input type="email" id="email" name="email" placeholder="Email Address *"
-                                    class="p-3 border h-16 border-gray-200" required />
-                            </div>
-                            <div class="flex flex-col">
-                                <label for="message" class="sr-only">Your Message</label>
-                                <textarea id="message" name="message" placeholder="Your Message" rows="5"
-                                    class="p-3 border border-gray-200" required></textarea>
-                            </div>
-                            <button type="submit"
-                                class="w-full py-3 cursor-pointer text-lg font-semibold bg-primary border border-primary transition-all duration-900 ease-in-out text-white hover:bg-transparent hover:text-primary pointer-events-auto"
-                                aria-label="Send your message to our team">
-                                Send Message
-                            </button>
-                        </form>
-                    </div>
-                    <!-- Google Map Section -->
-                    <div>
-                        <h2 class="text-2xl font-bold mb-4">Our Location</h2>
-                        <iframe class="z-50 h-72 md:h-[600px] lazyload" src="https://www.google.com/maps/embed?pb=..."
-                            width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                            tabindex="0" loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        <!-- footer -->
         <footer class="bg-footerbg text-white pt-16" data-aos="fade-up">
             <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Brand Information -->
                 <div>
-                    <img width="150" height="auto" loading="lazy" src="./assets/logo.png" alt="Your Company Logo"
-                        class="w-32 mb-8">
+                    <img width="150" height="auto" loading="lazy" src="./assets/logo-agency.webp"
+                        alt="Your Company Logo" class="w-32 mb-8">
                     <p class="mb-4 text-textclr2">Anno WP provides a fully customizable WordPress theme for businesses,
                         startups, and professionals.</p>
                     <p><strong>Contact us:</strong> <a href="mailto:info@example.com"
@@ -733,17 +751,17 @@
                 <div>
                     <h3 class="text-2xl font-semibold mb-6 text-textclr2">Project Gallery</h3>
                     <div class="grid grid-cols-3 gap-2">
-                        <img width="80" height="80" loading="lazy" src="./assets/gallery1.jpg"
+                        <img width="80" height="80" loading="lazy" src="./assets/gallery1.webp"
                             alt="Creative web design project" class="h-16 w-24 object-cover rounded">
-                        <img width="80" height="80" loading="lazy" src="./assets/gallery1.jpg"
+                        <img width="80" height="80" loading="lazy" src="./assets/gallery1.webp"
                             alt="Responsive WordPress theme preview" class="h-16 w-24 object-cover rounded">
-                        <img width="80" height="80" loading="lazy" src="./assets/gallery1.jpg"
+                        <img width="80" height="80" loading="lazy" src="./assets/gallery1.webp"
                             alt="Modern UI/UX design showcase" class="h-16 w-24 object-cover rounded">
-                        <img width="80" height="80" loading="lazy" src="./assets/gallery1.jpg"
+                        <img width="80" height="80" loading="lazy" src="./assets/gallery1.webp"
                             alt="Minimalist business website" class="h-16 w-24 object-cover rounded">
-                        <img width="80" height="80" loading="lazy" src="./assets/gallery1.jpg"
+                        <img width="80" height="80" loading="lazy" src="./assets/gallery1.webp"
                             alt="E-commerce theme layout" class="h-16 w-24 object-cover rounded">
-                        <img width="80" height="80" loading="lazy" src="./assets/gallery1.jpg"
+                        <img width="80" height="80" loading="lazy" src="./assets/gallery1.webp"
                             alt="Corporate branding website design" class="h-16 w-24 object-cover rounded">
                     </div>
                 </div>
@@ -753,7 +771,6 @@
                 <p class="text-textclr2">&copy; 2025 <strong>Your Company</strong>. All Rights Reserved.</p>
             </div>
         </footer>
-
 
     </div>
 

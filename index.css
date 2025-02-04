@@ -3,6 +3,7 @@
 @import "tailwindcss";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+
 @theme {
     --color-primary: #DD025A;
     --color-secondary: #24182E;
@@ -34,7 +35,7 @@ body {
 }
 
 /* loader */
-#content {
+/* #content {
     opacity: 1;
 }
 
@@ -50,7 +51,7 @@ body {
 
 .slow-spin {
     animation: slow-spin 1.5s linear infinite;
-}
+} */
 
 
 .active {
